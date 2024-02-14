@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tries - Lexicographic Sort"
-date:   2024-02-10 19:00:00 -0700
+date:   2024-02-13 19:00:00 -0700
 categories: trie
 ---
 
@@ -29,6 +29,7 @@ class Trie:
         self.visited = 0
 
     def insert(self, item: str):
+        item += '`' # <-- hack
         item = item.lower()
         i = 0
         node = self.root
@@ -86,6 +87,6 @@ words = [
     'is', 'a', 'kind', 'of', 'depth', 'first', 'traversal'
 ]
 for word in words:
-    t.insert(word+'`')
+    t.insert(word)
 {% endhighlight %}
 
