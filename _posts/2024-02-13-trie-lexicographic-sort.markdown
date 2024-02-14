@@ -9,6 +9,13 @@ This performs lexicographic sorting using a Trie iteratively, without
 recursion. This involves a slight hack: knowing that the backtick character
 occurs just before "a" in the ASCII table.
 
+The part I find interesting abou this is the `visited` attribute I added
+to the `TrieNode`. When the `lexicographic_sort` method runs, it toggles the
+`visited` attribute on each node using a "plus one, modulo two" operation.
+This way, it doesn't matter what the actual value of the `visited`
+attribute is, and we don't need to worry about "un-setting" it, we just check
+whether the child's `visited` attribute is the same as its parent, or not.
+
 
 {% highlight python %}
 class TrieNode:
@@ -88,5 +95,6 @@ words = [
 ]
 for word in words:
     t.insert(word)
+assert t.lexicographic_sort() == sorted(set(words))
 {% endhighlight %}
 
