@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tries - Lexicographic Sort"
+title:  "Trie - Lexicographic Sort"
 date:   2024-02-13 19:00:00 -0700
 categories: trie
 ---
