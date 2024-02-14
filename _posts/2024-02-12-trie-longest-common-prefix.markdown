@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Trie Problems"
+title:  "Trie - Longest Common Prefix"
 date:   2024-02-12 19:00:00 -0700
-categories: data-structures
+categories: trie
 ---
 
 I'd like to collect a few programming problems related to Tries here.
