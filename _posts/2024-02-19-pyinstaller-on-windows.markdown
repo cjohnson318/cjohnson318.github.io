@@ -6,7 +6,7 @@ categories: python
 ---
 
 PyInstaller is amazing, but it doesn't do cross-compilation. Furthermore, things
-that go well on your mac might need more work on a Windows machine.
+that go well on your Mac might need more work on a Windows machine.
 
 I struggled a little bit figuring out how to run PyInstaller on Windows after I
 had installed it using `pip`. Then I had trouble figuring out how to tell it
