@@ -64,9 +64,7 @@ class BinaryTree:
         stack = Stack()
         stack.push(node)
         state = 'PUSH'
-        i = 0       
-        while i < 20:
-            i += 1
+        while True:
             if len(stack) == 0:
                 break
             if state == 'PUSH':
