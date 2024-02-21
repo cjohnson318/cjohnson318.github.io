@@ -35,3 +35,8 @@ In the [documentation](https://docs.github.com/en/pages/setting-up-a-github-page
 jekyll new --skip-bundle --force .
 {% endhighlight %}
 
+To run this locally, use the following.
+
+{% highlight console %}
+bundle exec jekyll serve --livereload
+{% endhighlight %}
