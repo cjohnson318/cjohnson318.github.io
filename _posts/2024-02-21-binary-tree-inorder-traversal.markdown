@@ -64,9 +64,7 @@ class BinaryTree:
         stack = Stack()
         stack.push(node)
         state = 'PUSH'
-        while True:
-            if len(stack) == 0:
-                break
+        while len(stack):
             if state == 'PUSH':
                 node = stack.peek()
                 if node.left:
