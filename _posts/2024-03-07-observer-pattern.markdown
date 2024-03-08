@@ -84,3 +84,10 @@ event_manager.unsubscribe("truck_arrived", forklift_pool)
 warehouse.truck_arrived(bay=17)
 {% endhighlight %}
 
+And this should be the output of that code:
+
+{% highlight python %}
+Sending 3 forklift operator(s) to bay 23
+Paying invoice for shipment id on bay 23
+Paying invoice for shipment id on bay 17
+{% endhighlight %}
