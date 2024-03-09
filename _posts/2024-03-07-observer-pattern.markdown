@@ -5,15 +5,16 @@ date:   2024-03-07 00:00:00 -0700
 categories: python
 ---
 
-This is an example of the Observer Pattern. This can be used to simplify
-complex logic by using a pub/sub system to notify objects about changes to the
-state of some central object.
+The observer pattern is a behavioral pattern from the Design Patterns book. The
+main idea is that each component has a refence to some centralized observer,
+and can notify the observer when some change occurs. The difference from the
+mediator pattern is that the reaction to the observed event, handled by
+different listener classes managed by the observer, can be turned on and off at
+runtime through a subscribe/unsubscribe feature.
 
 In this example, I'm thinking of trucks coming into a warehouse. When a truck
 comes in, forklifts need to be sent to the correct bay in order to unload the
 truck, and invoices for the shipment need to be paid.
-
-The Observer part of all of this is the Observer class at the top.
 
 {% highlight python %}
 class Observer:
