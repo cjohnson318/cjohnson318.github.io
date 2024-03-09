@@ -13,8 +13,21 @@ In this example, I'm thinking of trucks coming into a warehouse. When a truck
 comes in, forklifts need to be sent to the correct bay in order to unload the
 truck, and invoices for the shipment need to be paid.
 
+The Observer part of all of this is the Observer class at the top.
+
 {% highlight python %}
-class EventManager:
+class Observer:
+
+    def subscribe(self, event: str, listener):
+        raise NotImplementedError()
+
+    def unsubscribe(self, event: str, listener):
+        raise NotImplementedError()
+
+    def notify(self, event: str, data):
+        raise NotImplementedError()
+
+class WarehouseEventManager(Observer):
 
     def __init__(self):
         self.listeners = dict()
@@ -68,7 +81,7 @@ class InvoiceListener(EventListenerInterface):
 These objects can then be used in application code as:
 
 {% highlight python %}
-event_manager = EventManager()
+event_manager = WarehouseEventManager()
 warehouse = Warehouse(event_manager)
 
 forklift_pool = ForkliftPoolListener(num_forklifts=3)
