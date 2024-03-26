@@ -45,9 +45,9 @@ Inside `test/test.py` I'll import modules from the sibling directory `lib/` as
 
 {% highlight python %}
 from ..lib import (
-adapters,
-core,
-interfaces,
+    adapters,
+    core,
+    interfaces,
 )
 {% endhighlight %}
 
@@ -65,18 +65,18 @@ import pathlib
 import pytest
 
 from ..lib import (
-adapters,
+    adapters,
 )
 
 @pytest.fixture
 def formation_adapter():
-'''Yield a formation adapter and then destroy it.'''
-path = pathlib.Path('test/data/test.duckdb')
-path = str(path.absolute())
-fmn_adapter = adapters.FormationDuckDBAdapter(path)
-fmn_adapter.create_formation_table()
-yield fmn_adapter
-os.remove(path)
+    '''Yield a formation adapter and then destroy it.'''
+    path = pathlib.Path('test/data/test.duckdb')
+    path = str(path.absolute())
+    fmn_adapter = adapters.FormationDuckDBAdapter(path)
+    fmn_adapter.create_formation_table()
+    yield fmn_adapter
+    os.remove(path)
 {% endhighlight %}
 
 ## Running Tests with Coverage
