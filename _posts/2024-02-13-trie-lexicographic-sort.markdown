@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Trie - Lexicographic Sort"
-date:   2024-02-13 19:00:00 -0700
-categories: trie
+title: 'Trie - Lexicographic Sort'
+date: 2024-02-13 19:00:00 -0700
+tags: data-structures
 ---
 
 This performs lexicographic sorting using a Trie iteratively, without
@@ -15,7 +15,6 @@ to the `TrieNode`. When the `lexicographic_sort` method runs, it toggles the
 This way, it doesn't matter what the actual value of the `visited`
 attribute is, and we don't need to worry about "un-setting" it, we just check
 whether the child's `visited` attribute is the same as its parent, or not.
-
 
 {% highlight python %}
 class TrieNode:
@@ -82,19 +81,18 @@ class Trie:
                 word = word[:-1]
                 ptr = ptr.parent
         return result
-                
+
 t = Trie()
 words = [
-    'lexicographic', 'sorting', 'of', 'a', 'set', 'of', 'keys', 'can', 'be',
-    'accomplished', 'with', 'a', 'simple', 'trie', 'based', 'algorithm',
-    'we', 'insert', 'all', 'keys', 'in', 'a', 'trie', 'output', 'all',
-    'keys', 'in', 'the', 'trie', 'by', 'means', 'of', 'preorder',
-    'traversal', 'which', 'results', 'in', 'output', 'that', 'is', 'in',
-    'lexicographically', 'increasing', 'order', 'preorder', 'traversal',
-    'is', 'a', 'kind', 'of', 'depth', 'first', 'traversal'
+'lexicographic', 'sorting', 'of', 'a', 'set', 'of', 'keys', 'can', 'be',
+'accomplished', 'with', 'a', 'simple', 'trie', 'based', 'algorithm',
+'we', 'insert', 'all', 'keys', 'in', 'a', 'trie', 'output', 'all',
+'keys', 'in', 'the', 'trie', 'by', 'means', 'of', 'preorder',
+'traversal', 'which', 'results', 'in', 'output', 'that', 'is', 'in',
+'lexicographically', 'increasing', 'order', 'preorder', 'traversal',
+'is', 'a', 'kind', 'of', 'depth', 'first', 'traversal'
 ]
 for word in words:
-    t.insert(word)
+t.insert(word)
 assert t.lexicographic_sort() == sorted(set(words))
 {% endhighlight %}
-

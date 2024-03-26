@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Testing in Python"
-date:   2024-03-25 00:00:00 -0700
-categories: python
+title: 'Testing in Python'
+date: 2024-03-25 00:00:00 -0700
+tags: python
 ---
 
 ## Overall Structure
@@ -39,23 +39,21 @@ project
     └── ...
 ```
 
-
 ## Testing Modules
 
 Inside `test/test.py` I'll import modules from the sibling directory `lib/` as
 
 {% highlight python %}
 from ..lib import (
-    adapters,
-    core,
-    interfaces,
+adapters,
+core,
+interfaces,
 )
 {% endhighlight %}
 
-
 ## Organizing Fixtures
 
-I keep all test fixtures in `test/conftest.py` which *magically* does not need
+I keep all test fixtures in `test/conftest.py` which _magically_ does not need
 to be imported into each test script.
 
 When a fixture needs to be cleaned up after a test, I yield the fixture instead
@@ -67,20 +65,19 @@ import pathlib
 import pytest
 
 from ..lib import (
-    adapters,
+adapters,
 )
 
 @pytest.fixture
 def formation_adapter():
-    '''Yield a formation adapter and then destroy it.'''
-    path = pathlib.Path('test/data/test.duckdb')
-    path = str(path.absolute())
-    fmn_adapter = adapters.FormationDuckDBAdapter(path)
-    fmn_adapter.create_formation_table()
-    yield fmn_adapter
-    os.remove(path)
+'''Yield a formation adapter and then destroy it.'''
+path = pathlib.Path('test/data/test.duckdb')
+path = str(path.absolute())
+fmn_adapter = adapters.FormationDuckDBAdapter(path)
+fmn_adapter.create_formation_table()
+yield fmn_adapter
+os.remove(path)
 {% endhighlight %}
-
 
 ## Running Tests with Coverage
 

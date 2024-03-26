@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Trie - Longest Common Prefix"
-date:   2024-02-12 19:00:00 -0700
-categories: trie
+title: 'Trie - Longest Common Prefix'
+date: 2024-02-12 19:00:00 -0700
+tags: data-structures
 ---
 
 I'd like to collect a few programming problems related to Tries here.
@@ -35,23 +35,24 @@ class Trie:
             node.children[item[i]] = new_node
             node = new_node
             i += 1
+
 {% endhighlight %}
 
 To calcualte the longest common prefix (LCP) then you can add this method to the Trie class.
 
 {% highlight python %}
 def longest_common_prefix(self) -> list:
-    lcp = []
-    i = 0
-    node = self.root
-    while True:
-        children = list(node.children.keys())
-        if len(children) == 1:
-            key = children[0]
-            lcp.append(key)
-            node = node.children.get(key)
-        else:
-            return lcp
+lcp = []
+i = 0
+node = self.root
+while True:
+children = list(node.children.keys())
+if len(children) == 1:
+key = children[0]
+lcp.append(key)
+node = node.children.get(key)
+else:
+return lcp
 {% endhighlight %}
 
 And then test this method like this.

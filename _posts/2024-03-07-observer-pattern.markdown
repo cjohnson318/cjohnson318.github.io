@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Observer Pattern"
-date:   2024-03-07 00:00:00 -0700
-categories: python
+title: 'Observer Pattern'
+date: 2024-03-07 00:00:00 -0700
+tags: design-patterns
 ---
 
 The observer pattern is a behavioral pattern from the Design Patterns book. The
@@ -77,6 +77,7 @@ class InvoiceListener(EventListenerInterface):
 
     def update(self, data):
         print(f'Paying invoice for shipment id on bay {data}')
+
 {% endhighlight %}
 
 These objects can then be used in application code as:

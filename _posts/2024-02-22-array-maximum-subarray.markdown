@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Array - Maximum Subarray"
-date:   2024-02-22 00:00:00 -0700
-categories: array
+title: 'Array - Maximum Subarray'
+date: 2024-02-22 00:00:00 -0700
+tags: algorithms
 ---
 
-This is an implementation of [Kadane's](https://en.wikipedia.org/wiki/Joseph_Born_Kadane) 
+This is an implementation of [Kadane's](https://en.wikipedia.org/wiki/Joseph_Born_Kadane)
 [Algorithm](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
 
 {% highlight python %}
@@ -65,4 +65,3 @@ assert Array([-2, -5, 6, -2, -3, 1, 5, -6]).maximum_subarray_elements() == [6, -
 assert Array([-3, -4, 5, -1, 2, -4, 6, -1]).maximum_subarray_elements() == [5, -1, 2, -4, 6]
 assert Array([-2, 3, -1, 2]).maximum_subarray_elements() == [3, -1, 2]
 {% endhighlight %}
-

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Binary Tree - In-Order Traversal"
-date:   2024-02-21 00:00:00 -0700
-categories: python
+title: 'Binary Tree - In-Order Traversal'
+date: 2024-02-21 00:00:00 -0700
+tags: data-structures
 ---
 
 Most explanations of binary tree in-order traversal just cover the recursive
@@ -28,7 +28,8 @@ class Stack:
 
     def __repr__(self):
         return str(self.data)
-        
+
+
 class BinaryTreeNode:
 
     def __init__(self, parent, data):
@@ -84,6 +85,7 @@ class BinaryTree:
         self.recursive_inorder_traversal(node.left)
         self.visit(node)
         self.recursive_inorder_traversal(node.right)
+
 {% endhighlight %}
 
 Here is some test code to test the implementation.
@@ -129,4 +131,3 @@ t.add(n2, 'left', 3)
 t.recursive_inorder_traversal(t.root)
 assert t.result == [1, 3, 2]
 {% endhighlight %}
-

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Mediator Pattern"
-date:   2024-03-09 00:00:00 -0700
-categories: python
+title: 'Mediator Pattern'
+date: 2024-03-09 00:00:00 -0700
+tags: design-patterns
 ---
 
 The mediator pattern is a behavioral pattern from the Design Patterns book. The
@@ -31,6 +31,7 @@ class Load:
 
     def delivered(self):
         self.mediator.notify(self, 'delivered')
+
 {% endhighlight %}
 
 An example of application code using this pattern.

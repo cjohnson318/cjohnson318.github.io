@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Simple Deterministic Push Down Automata"
-date:   2024-02-09 19:00:00 -0700
-categories: kotlin
+title: 'Simple Deterministic Push Down Automata'
+date: 2024-02-09 19:00:00 -0700
+tags: kotlin
 ---
 
 This was another programming exercise to get more comfortable with Kotlin. A deterministic push down automaton (DPDA) is basically a finite state machine with a stack for memory. Since finite state machines (FSM) generally use their states as memory, this allows you to have fewer states in your model. The downside is that you will have more numerous and complex state transitions. Whereas with a finite state machine you consider the current state and a new event to determine the next state, with a push down automaton you need to consider the current state, the incoming event, and the top of the stack before determining the next state and the next action to perform on the stack, either pushing a symbol, popping one off, or doing nothing.
@@ -19,9 +19,9 @@ data class Event(val event: String)
 data class StackSymbol(val symbol: String)
 
 enum class StackActionType {
-    PUSH,
-    POP,
-    PASS,
+PUSH,
+POP,
+PASS,
 }
 
 data class StackAction(val type: StackActionType, val symbol: StackSymbol?)
@@ -31,7 +31,7 @@ data class CurrentStateEvent(val state: State, val event: Event, val peek: Stack
 data class NextStateAction(val state: State, val action: StackAction? = null)
 
 class TransitionTable {
-    private var stateTable = mutableMapOf<CurrentStateEvent, NextStateAction>()
+private var stateTable = mutableMapOf<CurrentStateEvent, NextStateAction>()
 
     fun addTransition(current: State, event: Event, peek: StackSymbol?, next: State, action: StackAction? = null) {
         val currentStateEvent = CurrentStateEvent(current, event, peek)
@@ -43,10 +43,11 @@ class TransitionTable {
             else -> null
         }
     }
+
 }
 
 class Stack<T> {
-    var stack = mutableListOf<T>()
+var stack = mutableListOf<T>()
 
     fun push(item: T) {
         stack.add(item)
@@ -63,10 +64,11 @@ class Stack<T> {
             else -> null
         }
     }
+
 }
 
 class DeterministicPushDownAutomata constructor(initial: State, val transitionTable: TransitionTable) {
-    val error = NextStateAction(State("error"))
+val error = NextStateAction(State("error"))
 
     var state = initial
     var stack = Stack<StackSymbol>()
@@ -84,12 +86,13 @@ class DeterministicPushDownAutomata constructor(initial: State, val transitionTa
             }
         }
     }
+
 }
 
 fun main(args: Array<String>) {
-    val initial = State("initial")
-    val halt = State("halt")
-    val error = State("error")
+val initial = State("initial")
+val halt = State("halt")
+val error = State("error")
 
     val openParen = Event("open-paren")
     val closeParen = Event("close-paren")
@@ -125,6 +128,6 @@ fun main(args: Array<String>) {
     dpda.send(closeParen)
     dpda.send(semicolon)
     println(dpda.state)
+
 }
 {% endhighlight %}
-

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Trie - Duplicate Entries"
-date:   2024-02-14 19:00:00 -0700
-categories: trie
+title: 'Trie - Duplicate Entries'
+date: 2024-02-14 19:00:00 -0700
+tags: data-structures
 ---
 
 This ended up being pretty easy. Just add an optional attribute on the TrieNode
@@ -44,18 +44,17 @@ class Trie:
             node.children[item[i]] = new_node
             node = new_node
             i += 1
-            
+
 mat = [
-	[0, 1, 1, 0, 0],
-	[1, 0, 0, 1, 0],
-	[1, 0, 0, 1, 0],
-	[0, 0, 1, 1, 0],
-	[0, 1, 1, 0, 0]
+[0, 1, 1, 0, 0],
+[1, 0, 0, 1, 0],
+[1, 0, 0, 1, 0],
+[0, 0, 1, 1, 0],
+[0, 1, 1, 0, 0]
 ]
 
 t = Trie()
 for row in mat:
-    t.insert(row)
+t.insert(row)
 assert t.duplicates == [3, 5]
 {% endhighlight %}
-

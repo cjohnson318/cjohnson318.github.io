@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Array - Smallest k-Element Set"
-date:   2024-02-23 00:00:00 -0700
-categories: python
+title: 'Array - Smallest k-Element Set'
+date: 2024-02-23 00:00:00 -0700
+tags: algorithms
 mathjax: true
 ---
 
@@ -61,7 +61,6 @@ class Array:
         return result
 
 for i in range(1000):
-    r = [random.randint(-5,5) for _ in range(100)]
-    assert Array(r).k_element_subarrays_brute_force(3) == Array(r).k_element_subarrays_moving_queue(3), r
+r = [random.randint(-5,5) for _ in range(100)]
+assert Array(r).k_element_subarrays_brute_force(3) == Array(r).k_element_subarrays_moving_queue(3), r
 {% endhighlight %}
-
