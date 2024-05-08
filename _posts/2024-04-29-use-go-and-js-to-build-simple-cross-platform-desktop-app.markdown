@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simple Go Wails Example"
+title:  "Use Go and JS to Build an Simple Cross Platform Desktop App"
 date:   2024-04-29 00:00:00 -0700
 tags: go javascript
 ---
@@ -211,4 +211,13 @@ export default {
   height: 100vh;
 }
 </style>
+{% endhighlight %}
+
+## Compression with UPX
+
+At this point, our executeable is about 40M, but we can use UPX to compress this down to about 14M.
+
+{% highlight console %}
+brew install upx
+wails build -clean -upx
 {% endhighlight %}
