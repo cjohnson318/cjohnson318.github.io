@@ -2,7 +2,7 @@
 layout: post
 title:  "Simple Go Wails Example"
 date:   2024-04-29 00:00:00 -0700
-categories: go javascript
+tags: go javascript
 ---
 
 Wails is a cross-platform desktop solution that leverages Go for the business logic and cross-platform part, and several JS frameworks/libraries for the presentation layer. This is achieved by allowing functions written in Go to be called automagically from the JS presentation layer.
