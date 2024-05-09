@@ -5,6 +5,8 @@ date:   2024-04-29 00:00:00 -0700
 tags: go javascript
 ---
 
+![Cross Platform Desktop App Example](/assets/images/Screenshot 2024-05-07 at 9.54.36 PM.png)
+
 Wails is a cross-platform desktop solution that leverages Go for the business logic and cross-platform part, and several JS frameworks/libraries for the presentation layer. This is achieved by allowing functions written in Go to be called automagically from the JS presentation layer.
 
 So far, everything I've put into this project "just works". I added Tailwind for styling my Vue components, I added routing to present users with different views, I added OS operations to check that a file exists in the file system, I added a library to talk to DuckDB, I made (local) network requests. Everything went smoothly.
