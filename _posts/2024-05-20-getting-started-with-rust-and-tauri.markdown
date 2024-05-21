@@ -5,7 +5,7 @@ date:   2024-05-20 00:00:00 -0700
 tags: rust
 ---
 
-Tauri is very similar to Wails, except that it is based on Rust instead of Go. Both platforms let you choose from several frontend frameworks, and both platforms allow you to pass data back and forth between the JS and the compiled code.
+[Tauri](https://tauri.app/) is very similar to [Wails](https://wails.io/), except that it is based on Rust instead of Go. Both platforms let you choose from several frontend frameworks, and both platforms allow you to pass data back and forth between the JS and the compiled code.
 
 ## Rust Quickstart
 
