@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Getting Started with Tauri"
+title:  "Getting Started with Rust and Tauri"
 date:   2024-05-20 00:00:00 -0700
 tags: rust
 ---
