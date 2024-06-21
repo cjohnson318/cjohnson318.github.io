@@ -76,6 +76,14 @@ You should tag versions using git in order to easily retrieve older versions as 
 
 For an extra layer of sanity, include a `CHANGELOG` in your project. This is different from just copy/pasting your git log. Maintaining a changelog describes what was added, changed, deprecated, removed, or fixed at in every version. It is intended to be consumed by humans and answer questions like, "Are we still doing X in version Y?". The site [keepachangelog.com](https://keepachangelog.com/) is the best resource on this topic.
 
+## Bonus: Debugging
+
+Before Python 3.7 you needed to use `import pdb; pdb.set_trace()` now you can
+simply say `breakpoint()`. This will open a debugging environment. You can use
+`p` to print a variable, `n` to go to the next line, `s` to step into an 
+instruction, `c` to go to the next breakpoint, and `q` to quit. These are the
+most basic and intuitive commands. More information can be found [here](https://docs.python.org/3/library/pdb.html).
+
 ## Bonus: Windows Executables
 
 I use [PyInstaller](https://pyinstaller.org/en/stable/) for building binary executable EXEs for Windows out of Python projects. The downside is that this solution does not support cross compilation, so you still need a Windows machine in order to build the executable.
@@ -100,6 +108,7 @@ This is an example script with the boilerplate for setting up logging to the con
 import argparse
 import logging
 import os
+import pdb
 
 # third-party modules
 import tqdm # MIT
@@ -156,6 +165,7 @@ if __name__ == '__main__':
     # business logic imported from another module
     with tqdm.tqdm(total=os.path.getsize(args.csv)) as pbar:
         with open(args.csv, 'r') as fh:
+            # read lines of a file one at a time, instead of all at once
             for line in fh:
                 lib.business_logic.operation(line)
                 pbar.update(len(line))
