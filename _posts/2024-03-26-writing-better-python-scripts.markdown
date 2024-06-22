@@ -78,11 +78,13 @@ For an extra layer of sanity, include a `CHANGELOG` in your project. This is dif
 
 ## Bonus: Debugging
 
-Before Python 3.7 you needed to use `import pdb; pdb.set_trace()` now you can
-simply say `breakpoint()`. This will open a debugging environment. You can use
-`p` to print a variable, `n` to go to the next line, `s` to step into an 
-instruction, `c` to go to the next breakpoint, and `q` to quit. These are the
-most basic and intuitive commands. More information can be found [here](https://docs.python.org/3/library/pdb.html).
+If log statements are not enough to debug a problem, then you can take
+advantage of the Python debugger. Before Python 3.7 you needed to use
+`import pdb; pdb.set_trace()` now you can simply say `breakpoint()`. This will
+open a debugging environment. You can use `p` to print a variable, `n` to go to
+the next line, `s` to step into an instruction, `c` to go to the next
+breakpoint, and `q` to quit. These are the most basic and intuitive commands.
+More information can be found [here](https://docs.python.org/3/library/pdb.html).
 
 ## Bonus: Windows Executables
 
