@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Exponentially Weighted Moving Averages and MACD"
-date:   2024-10-10 00:00:00 -0700
+title: "Exponentially Weighted Moving Averages and MACD"
+date: 2024-10-10 00:00:00 -0700
 tags: python
 ---
 
@@ -43,7 +43,7 @@ plt.savefig('exponential-moving-average.png', dpi=200)
 ![Exponential Moving Averages](/assets/images/exponential-moving-average.png)
 
 Here, we can plot the MACD curve, and the difference between the MACD curve and
-the MACD Signal curve. On interpretation of this difference is that nagative
+the MACD Signal curve. One interpretation of this difference is that negative
 values suggest a bear market, while positive values suggest a bear market. 
 
 {% highlight python %}
@@ -57,3 +57,9 @@ plt.savefig('macd-signal.png', dpi=200)
 {% endhighlight %}
 
 ![MACD and MACD Signal](/assets/images/macd-signal.png)
+
+By incorporating EWMA and MACD into your technical analysis, you gain valuable
+insights into price movements. While not foolproof, these indicators can help
+you identify trends, potential reversals, and even trading signals. Remember,
+they are just one piece of the puzzle, and a well-rounded trading strategy
+considers other factors too. 
