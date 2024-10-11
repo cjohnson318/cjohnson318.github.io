@@ -3,7 +3,39 @@ layout: post
 title: "Exponentially Weighted Moving Averages and MACD"
 date: 2024-10-10 00:00:00 -0700
 tags: python
+mathjax: true
 ---
+
+## What is an Exponentially Weighted Moving Average
+
+A moving average takes a noisy time series and replaces each value with the
+average value of a neighborhood about the given value. This neighborhood may
+consist of purely historical data, or it may be centered about the given value.
+Furthermore, the values in the neighborhood may be weighted using different sets
+of weights. Here is an example of an equally weighted three point moving
+average, using historical data,
+
+<script type="math/tex; mode=display">
+s_{t} = \dfrac{x_{t-2} + x_{t-1} + x_{t}}{3}
+</script>
+
+Here, $s_{t}$ represents the smoothed signal, and $x_{t}$ represents the noisy
+time series. In contrast to simple moving averages, an exponentially weighted
+moving average (EWMA) adjusts a value according to an exponentially weighted
+sum of all previous values. This is the basic idea,
+
+<script type="math/tex; mode=display">
+s_{t} = \alpha x_{t} + (1 - \alpha) s_{t-1}
+</script>
+
+This is nice because you don’t have to worry about having a three point window
+versus a five point window, or worry about the appropriateness of your
+weighting scheme. With the EWMA, previous perturbations "remembered", and
+"slowly forgotten", by the $s_{t-1}$ term in the last equation, whereas with a
+window or neighborhood with discrete boundaries, a perturbation is forgotten as
+soon as it passes out of the window.
+
+## How do I do this in code?
 
 This code assumes that you have a Pandas DataFrame with a `price` column, and
 a `datetime` column. The following code creates two columns, `ewm_12` and
@@ -57,6 +89,8 @@ plt.savefig('macd-signal.png', dpi=200)
 {% endhighlight %}
 
 ![MACD and MACD Signal](/assets/images/macd-signal.png)
+
+## Conclusion
 
 By incorporating EWMA and MACD into your technical analysis, you gain valuable
 insights into price movements. While not foolproof, these indicators can help
