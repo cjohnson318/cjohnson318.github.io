@@ -27,6 +27,7 @@ url: "https://cjohnson318.github.io" # the base hostname & protocol for your sit
 github_username: cjohnson318 
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
