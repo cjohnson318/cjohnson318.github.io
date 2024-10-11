@@ -15,21 +15,23 @@ Furthermore, the values in the neighborhood may be weighted using different sets
 of weights. Here is an example of an equally weighted three point moving
 average, using historical data,
 
+<div>
 $$ s_{t} = \dfrac{x_{t-2} + x_{t-1} + x_{t}}{3} $$
+</div>
 
-
-Here, $s_{t}$ represents the smoothed signal, and $x_{t}$ represents the noisy
+Here, <span>$s_{t}$</span> represents the smoothed signal, and <span>$x_{t}$</span> represents the noisy
 time series. In contrast to simple moving averages, an exponentially weighted
 moving average (EWMA) adjusts a value according to an exponentially weighted
 sum of all previous values. This is the basic idea,
 
+<div>
 $$ s_{t} = \alpha x_{t} + (1 - \alpha) s_{t-1} $$
-
+</div>
 
 This is nice because you don’t have to worry about having a three point window
 versus a five point window, or worry about the appropriateness of your
 weighting scheme. With the EWMA, previous perturbations "remembered", and
-"slowly forgotten", by the $s_{t-1}$ term in the last equation, whereas with a
+"slowly forgotten", by the <span>$s_{t-1}$</span> term in the last equation, whereas with a
 window or neighborhood with discrete boundaries, a perturbation is forgotten as
 soon as it passes out of the window.
 
