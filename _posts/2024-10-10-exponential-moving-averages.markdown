@@ -6,7 +6,7 @@ tags: python
 mathjax: true
 ---
 
-## What is an Exponentially Weighted Moving Average
+## What is EWMA?
 
 A moving average takes a noisy time series and replaces each value with the
 average value of a neighborhood about the given value. This neighborhood may
