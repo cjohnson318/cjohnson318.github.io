@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exponential Moving Averages and MACD"
+title:  "Exponentially Weighted Moving Averages and MACD"
 date:   2024-10-10 00:00:00 -0700
 tags: python
 ---
