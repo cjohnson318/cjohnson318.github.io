@@ -76,7 +76,7 @@ plt.savefig('exponential-moving-average.png', dpi=200)
 
 Here, we can plot the MACD curve, and the difference between the MACD curve and
 the MACD Signal curve. One interpretation of this difference is that negative
-values suggest a bear market, while positive values suggest a bear market. 
+values suggest a bear market, while positive values suggest a bull market. 
 
 {% highlight python %}
 m = mkt[['macd', 'macd_signal', 'macd_minus_signal']]
