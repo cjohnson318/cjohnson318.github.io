@@ -15,18 +15,16 @@ Furthermore, the values in the neighborhood may be weighted using different sets
 of weights. Here is an example of an equally weighted three point moving
 average, using historical data,
 
-<script type="math/tex; mode=display">
-s_{t} = \dfrac{x_{t-2} + x_{t-1} + x_{t}}{3}
-</script>
+$$ s_{t} = \dfrac{x_{t-2} + x_{t-1} + x_{t}}{3} $$
+
 
 Here, $s_{t}$ represents the smoothed signal, and $x_{t}$ represents the noisy
 time series. In contrast to simple moving averages, an exponentially weighted
 moving average (EWMA) adjusts a value according to an exponentially weighted
 sum of all previous values. This is the basic idea,
 
-<script type="math/tex; mode=display">
-s_{t} = \alpha x_{t} + (1 - \alpha) s_{t-1}
-</script>
+$$ s_{t} = \alpha x_{t} + (1 - \alpha) s_{t-1} $$
+
 
 This is nice because you don’t have to worry about having a three point window
 versus a five point window, or worry about the appropriateness of your
