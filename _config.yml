@@ -24,13 +24,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   This blog mainly centers around Python web development and data science with Pandas
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cjohnson318.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: cjohnson318 
+github_username: cjohnson318
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-spaceship
 
 # Exclude from processing.
 # The following items will not be processed, by default.
