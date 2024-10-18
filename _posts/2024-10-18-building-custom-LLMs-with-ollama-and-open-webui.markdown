@@ -128,19 +128,20 @@ you can write something like the following script.
 {% highlight python %}
 import ollama
 
-modelfile='''
+model_file='''
 FROM llama2
 SYSTEM You are a helpful squirrel that is very knowledgeable about fine woodworking.
 '''
 
-ollama.create(model='woodland-friend', modelfile=modelfile)
+mode_lname = 'woodland-friend'
+ollama.create(model=model_name, modelfile=modelfile)
 
-def query_squirrel(self, content:str):
+def query_squirrel(content:str):
     messages = [{
         'role': 'user',
         'content': content,
     }]
-    resp = ollama.chat(model=self.model, messages=messages)
+    resp = ollama.chat(model=model_name, messages=messages)
     if not resp.get('done'):
         raise TimeoutError('Squirrel timeout')
     message = resp.get('message')
