@@ -152,7 +152,7 @@ def query_squirrel(self, content:str):
     return content
 
 while True:
-    query = input('Query: ')
+    query = input('Query Helpful Squirrel: ')
     if str(query) == "exit":
         break
     print(query_squirrel(query))
