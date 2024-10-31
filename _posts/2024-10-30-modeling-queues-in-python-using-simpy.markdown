@@ -87,3 +87,13 @@ Okay, that was kind of a lot. The output is kind of what you would expect.
 710.2 min., airplane 6 arrives
 710.2 min., airplane 6 deplaning/boarding
 {% endhighlight %}
+
+And then we can plot the waiting times as,
+
+{% highlight python %}
+plt.step([1,2,3,4,5,], process_t, where='mid')
+plt.title('Waiting time on tarmac')
+plt.savefig('waiting-times.png', dpi=200)
+{% endhighlight %}
+
+![Waiting Times on Tarmac](/assets/images/waiting-times.png)
