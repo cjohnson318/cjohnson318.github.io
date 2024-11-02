@@ -83,8 +83,8 @@ That should produce this:
 
 Great, that works. These are the lessons I learned:
 
-  - `self.pos` is a member of Agent
-  - `networkx.Graph` nodes need to be integers, not strings
+  - `self.pos` is a member of Agent; renaming this `position` will break the code
+  - `networkx.Graph` nodes need to be integers to work with `mesa.space.NetworkGrid`, not strings
   - `mesa.space.NetworkGrid.get_neighbors()` returns `mesa.Agent` objects, while `mesa.space.NetworkGrid.get_neighborhood()` returns `networkx.Node` objects
 
 Here is a more complicated example. There are two, differently sized Trucks,
@@ -155,11 +155,11 @@ class LogisticsModel(Model):
         self.grid.place_agent(self.warehouse_B, 1)
 
         # create and place truck agents
-        truck = TruckAgent(0, self, 2)
+        truck = TruckAgent(0, self, capacity=2)
         self.schedule.add(truck)
         self.grid.place_agent(truck, 0)
 
-        truck = TruckAgent(1, self, 3)
+        truck = TruckAgent(1, self, capacity=3)
         self.schedule.add(truck)
         self.grid.place_agent(truck, 0)
 
