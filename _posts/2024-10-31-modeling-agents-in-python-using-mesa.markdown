@@ -13,15 +13,15 @@ to trade systems of differential equations, for code, and worrying about string
 encodings, timezones, rounding errors, and in short, chaos.
 
 The Mesa module allows you to create agent based models. These allow you to
-break a problem into entities, and then define how those entities react with
-each other. You might use this to model entities fighting for resources, or
-working together. I'll start with a simple model that uses a graph, where an
+break a problem into entities, and then define how those entities intereact
+with each other. You might use this to model entities fighting for resources,
+or working together. I'll start with a simple model that uses a graph, where an
 agent, Pacer, paces back and forth on a two node graph, printing its location
 at each step.
 
 {% highlight python %}
 from mesa import Agent, Model
-from mesa.time import RandomActivationByType
+from mesa.time import RandomActivationByTypes
 from mesa.space import NetworkGrid
 import networkx as nx
 
