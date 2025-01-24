@@ -147,7 +147,7 @@ logger = logging.getLogger(__name__)
 MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017')
 
 async def mongo_dependency():
-    db = MongoAdapter(MONGO_URI, "tictactoe", "items")
+    db = MongoAdapter(MONGO_URI, "database", "items")
     try:
         yield db
     finally:
@@ -159,7 +159,7 @@ DatabaseDependency = Annotated[DatabaseInterface, Depends(mongo_dependency)]
 
 @app.get("/")
 async def root():
-    return {"message": "foo"}
+    return {"message": "hello"}
 
 @app.post("/items")
 async def create_item(item: dict, db: DatabaseDependency):
