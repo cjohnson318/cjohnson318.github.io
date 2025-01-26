@@ -2,7 +2,7 @@
 layout: post
 title: "Using Valhalla for Routing in Mapbox"
 date: 2025-01-25 00:00:00 -0700
-tags: javascript, react
+tags: javascript react
 ---
 
 ![Valhalla Routing Example](/assets/images/valhalla-routing-example.png)
