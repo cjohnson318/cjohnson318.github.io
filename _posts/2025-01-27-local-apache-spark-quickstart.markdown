@@ -80,7 +80,7 @@ if __name__ == "__main__":
     spark.stop()
 {% endhighlight %}
 
-## Run the Code
+## Send Code to Spark
 
 To run this, we'll send a command to the Docker image using the
 `docker exec -it` functionality. I created a `run.bash` script to do this; it
