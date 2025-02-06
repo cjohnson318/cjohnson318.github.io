@@ -79,6 +79,12 @@ Valhalla returns *(latitude, longitude)* pairs, and that the Valhalla had
 scaled the coordinates to *10x* what I expected, i.e., a 20 degree latitude was
 200 degrees. Besides that, adding a source GeoJSON and a layer was pretty easy.
 
+**NOTE** -- We're drawing the route on the map using the function
+`displayRouteOnMapbox`. This works by adding a *source* named `route` to the 
+mapbox object, and then adding a *layer* that references the *source* named
+`route`. So in a more dynamic system we would keep track of sources and layers
+elsewhere, and add, remove, or modify them as needed. In this app, we're just
+painting the route on the map directly.
 
 {% highlight typescript %}
 import React, { useRef, useEffect } from 'react';
