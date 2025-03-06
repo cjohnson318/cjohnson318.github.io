@@ -181,7 +181,7 @@ that the number could represent. Return the answer in any order.
 
 {% highlight python %}
 class Solution:
-    def letterCombinations(self, digits: List[int]):
+    def letterCombinations(self, digits: str):
         if not digits:
             return []
     
