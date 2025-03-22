@@ -15,7 +15,7 @@ same bit of state, like a counter.
 First setup a project using pnpm and vite:
 
 {% highlight console %}
-pnpm create vite counterApp --template react
+pnpm create vite counter-app --template react
 cd counterApp
 pnpm install
 pnpm add @reduxjs/toolkit react-redux redux
