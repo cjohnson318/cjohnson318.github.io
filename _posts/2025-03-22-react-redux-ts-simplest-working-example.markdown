@@ -2,7 +2,7 @@
 layout: post
 title: "React Redux in TypeScript - Simplest Working Example"
 date: 2025-03-22 00:00:00 -0700
-tags: react
+tags: react redux
 ---
 
 This is another Simplest Working Example post. This will cover Redux using
@@ -58,10 +58,6 @@ const counterReducer = createReducer(initialState, (builder) => {
 });
 
 export default counterReducer;
-{% endhighligh %}
-
-
-
 {% endhighlight %}
 
 If this looks too much like magic, with `createAction`, then you can rewrite
@@ -157,7 +153,6 @@ export const store = configureStore({
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-
 {% endhighlight %}
 
 ## The Application
