@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "React Redux n TypeScript - Simplest Working Example"
-date: 2025-03-21 00:00:00 -0700
-tags: react redux typescript
+title: "React Redux in TypeScript - Simplest Working Example"
+date: 2025-03-22 00:00:00 -0700
+tags: react
 ---
 
 This is another Simplest Working Example post. This will cover Redux using
