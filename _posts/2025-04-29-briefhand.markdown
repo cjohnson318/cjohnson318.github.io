@@ -154,22 +154,22 @@ In contrast to Briefhand, Personal Shorthand specifies a 6th basic theory rule: 
 
 Every practical shorthand system provides short abbreviations for the most common words. The Briefhand textbook calls these “high frequency abbreviations” is some places and “brief forms” in other spots. Here are some examples. This is not a complete list.
 
-a stands for an, and, at, about
-c represents can, come, copy, credit
-e stands for the, he
-g represents go, good, get, glad, give
-i stands for I, it, is, time
-l represents will, well, all, also, letter
-m stands for am, me, my, man, men, made
-n represents in, not, no, know, when, information
-o stands for of, on, out, what
-r represents are, our, or, order, return
-s is the abbreviation for she, so, sincerely, wish, see
-t stands for to, too, this, that, there, thank
-u stands for you, up, under, us
-v represents have, ever, every, very, receive
-w stands for with, we, were, which, how, now
-z represents as, has, was, his
+  - a stands for an, and, at, about
+  - c represents can, come, copy, credit
+  - e stands for the, he
+  - g represents go, good, get, glad, give
+  - i stands for I, it, is, time
+  - l represents will, well, all, also, letter
+  - m stands for am, me, my, man, men, made
+  - n represents in, not, no, know, when, information
+  - o stands for of, on, out, what
+  - r represents are, our, or, order, return
+  - s is the abbreviation for she, so, sincerely, wish, see
+  - t stands for to, too, this, that, there, thank
+  - u stands for you, up, under, us
+  - v represents have, ever, every, very, receive
+  - w stands for with, we, were, which, how, now
+  - z represents as, has, was, his
 
 25 of the 26 letters have multiple words assigned to each brief form. The letter x only stands for one word: “check.” Personally I use x as a brief form for “not” and thus reduce the ambiguity of the brief form n
 
@@ -177,15 +177,15 @@ Some students may find it helpful to compose an absurd sentence that uses all th
 
 It is interesting to note that some brief form words are represented by their last letters:
 
-would becomes d
-if becomes f
-they and why become y
+  - would becomes d
+  - if becomes f
+  - they and why become y
 
 A few brief forms are based on the final sound rather than the last letter:
 
-as, has, was, his become z
-are becomes r
-take, make become k
+  - as, has, was, his become z
+  - are becomes r
+  - take, make become k
 
 ## Phrases
 
@@ -195,26 +195,46 @@ Briefhand distinctively does not connect the brief forms that are used in phrase
 
 Below are examples of some frequent phrases.
 
-Briefhand	longhand	~	Briefhand	longhand
-o e	of the		t e	to the
-a e	and the		w e	with the
-d b	would be		d n	did not
-e i	he is		e z	he was
-f y	for your		f u	for you
-f u r	if you are		f t i	if there is
-g nf	good enough		l b g	will be glad
-i m	I am		i v	I have
-i z b	it has been		s z b	she has been
-an i	any time		a e i	at the time
-n e	in the		n e	when the
-nt e	into the		n dwt	no doubt
-o is	of its		o i	what is
-t i	there is		t r	there are
-u v	you have		u n	you know
-v mc	very much		w mc	how much
-y r	they are		y v	they have
-z n	was not		z n b	has not been
-1 o e	one of the		1 o tes	one of these
+| Briefhand | Longhand |
+|-----------|------------|
+| o e |	of the		|
+| t e |	to the|
+| a e |	and the		|
+| w e |	with the|
+| d b |	would be	|	
+| d n |	did not|
+| e i |	he is		|
+| e z |	he was|
+| f y |	for your	|	
+| f u |	for you|
+| f u r	| if you are	|	
+| f t i	| if there is|
+| g nf	| good enough	|	
+| l b g	| will be glad|
+| i m	| I am		|
+| i v	| I have|
+| i z b	| it has been	|	
+| s z b	| she has been|
+| an i	| any time		|
+| a e i	| at the time|
+| n e	| in the		|
+| n e	| when the|
+| nt e	| into the		|
+| n dwt	| no doubt|
+| o is	| of its		|
+| o i	| what is|
+| t i	| there is		|
+| t r	| there are|
+| u v	| you have		|
+| u n	| you know|
+| v mc	| very much		|
+| w mc	| how much|
+| y r	| they are		|
+| y v	| they have|
+| z n	| was not		|
+| z n b	| has not been|
+| 1 o e	| one of the	|	
+| 1 o tes |	one of these|
  
 
 ## Word Beginnings & Endings
@@ -223,35 +243,35 @@ Briefhand has shortcuts for some of the prefixes, suffixes and syllables that of
 
 ### Beginnings:
 
-cau is reduced to c
-ex is reduced to x
-per, por-, pr, pro-, pur are reduced to p
-re is reduced to r
-super is reduced to spr
+  - cau is reduced to c
+  - ex is reduced to x
+  - per, por-, pr, pro-, pur are reduced to p
+  - re is reduced to r
+  - super is reduced to spr
 
-en is reduced to n
-in is reduced to n except before another n
-un is reduced to n except before another n
+  - en is reduced to n
+  - in is reduced to n except before another n
+  - un is reduced to n except before another n
 
-em is reduced to m except before vowels
-im is reduced to m except before another m
+  - em is reduced to m except before vowels
+  - im is reduced to m except before another m
 
-for becomes f
-under becomes u
-with becomes w
+  - for becomes f
+  - under becomes u
+  - with becomes w
 
 ### Endings:
 
--ciency is written as sc
--cient becomes st
--ification is written as fcas
--less becomes ls
--ment is written as m
--ology becomes log
--ort is reduced to rt
--ship is written as sp
--tain becomes tan
--ual is reduced to ul
+  - -ciency is written as sc
+  - -cient becomes st
+  - -ification is written as fcas
+  - -less becomes ls
+  - -ment is written as m
+  - -ology becomes log
+  - -ort is reduced to rt
+  - -ship is written as sp
+  - -tain becomes tan
+  - -ual is reduced to ul
 
 The past tense -ed is always written as d even though it is sometimes pronounced like /t/ : hissed > hsd
 
