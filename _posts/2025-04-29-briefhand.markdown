@@ -26,15 +26,29 @@ In The Journal of Business Education (Volume 35, 1960 - Issue 7) an article enti
 
 These five rules are the core of Briefhand.
 
-  1. Never write a silent vowel. In Briefhand, like is written as lik and gate is written as gat
+  1. Never write a silent vowel.
 
-  2. At the beginning of a word, non-silent vowels must be written. acre is written as acr and alike becomes alik (Although it is not mentioned in the Briefhand textbook’s theory rules, a non-silent vowel at the end of a word must also be written, with some exceptions.)
+  2. Non-silent vowels at the beginning and ends of words must be written.
 
   3. Non-silent vowels within a word are omitted if they are “short” vowels but “long” vowels are written:
 
   4. If a word contains a doubled vowel, only one of the letters is written:
 
   5. Silent consonants in a word are omitted and doubled consonants are reduced to one.
+
+From Rule 1 we get:
+
+```
+like : lik
+gate : gat
+```
+
+From Rule 2 we get:
+
+```
+acre  : acr
+alike : alik
+```
 
 From Rule 3 we get:
 
