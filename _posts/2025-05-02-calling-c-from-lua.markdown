@@ -62,15 +62,13 @@ gcc -shared -fPIC -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -L/opt/homebrew/C
 
 ### Lua Code 
 
-This code allows us to pull the "add" function from our C code, myclib.c, via the shared object.
+This code allows us to pull the "add" function from our C code, `myclib.c`, via the shared object.
 
 ```lua
--- Require the module (assuming the shared library is named mylib.so/mylib.dll)
+-- Require the module (assuming the shared library is named myclib.so/myclib.dll)
 local mylib = require("myclib")
 
 -- Call the C function
 local sum = mylib.add(3, 8)
 print("The sum is:", sum) -- 11
 ```
-
-

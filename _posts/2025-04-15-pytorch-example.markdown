@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pytorch - Simplest Working Example"
+title: "Pytorch - Example"
 date: 2025-03-22 00:00:00 -0700
 tags: python
 ---
