@@ -6,7 +6,7 @@ date: 2025-05-02 00:00:00 -0700
 
 I've written C extensions for Python, but I've never done it for Lua before.
 The basic idea is that you write a function that takes the `lua_State *L`
-pointer, and returns an `int`, refering to the number of values it's pushing
+pointer, and returns an `int`, referring to the number of values it's pushing
 back onto Lua's stack. Then you add some code to make your C code importable
 into Lua as a module. Finally, you compile your C code into a shared object
 and make it available to your Lua code, either in the same working directory,
@@ -60,9 +60,16 @@ I compiled the C code above with this command,
 gcc -shared -fPIC -I/opt/homebrew/Cellar/lua/5.4.7/include/lua -L/opt/homebrew/Cellar/lua/5.4.7/lib -llua5.4 -o myclib.so myclib.c
 ```
 
+The `-L` flag specifies the location of an external library, and the `-l` flag
+specifies the name of the shared library you want to link. These flags work
+together with the `-fPIC` flag, which generates *position-independent code*,
+so that the shared library can be loaded from any address, rather than a static
+one. The `-I` flag tells `gcc` where to look for header files, in this case,
+the Lua files we used so that the C code could interact with the Lua interpreter.
+
 ### Lua Code 
 
-This code allows us to pull the "add" function from our C code, `myclib.c`, via the shared object.
+This code allows us to pull the `add` function from our C code, `myclib.c`, via the shared object, `myclib.so`, and call it from out Lua script.
 
 ```lua
 -- Require the module (assuming the shared library is named myclib.so/myclib.dll)
