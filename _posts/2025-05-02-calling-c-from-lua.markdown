@@ -12,11 +12,11 @@ into Lua as a module. Finally, you compile your C code into a shared object
 and make it available to your Lua code, either in the same working directory,
 or on a path that Lua knows about.
 
-## Calling C from Lua
+## C Code 
 
-### C Code 
+```c
+// myclib.c
 
-```c 
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
@@ -67,11 +67,13 @@ so that the shared library can be loaded from any address, rather than a static
 one. The `-I` flag tells `gcc` where to look for header files, in this case,
 the Lua files we used so that the C code could interact with the Lua interpreter.
 
-### Lua Code 
+## Lua Code 
 
 This code allows us to pull the `add` function from our C code, `myclib.c`, via the shared object, `myclib.so`, and call it from out Lua script.
 
 ```lua
+-- script.lua
+
 -- Require the module (assuming the shared library is named myclib.so/myclib.dll)
 local mylib = require("myclib")
 
