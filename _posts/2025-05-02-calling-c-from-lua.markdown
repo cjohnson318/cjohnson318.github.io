@@ -2,7 +2,7 @@
 layout: post
 title: "Calling C From Lua"
 date: 2025-05-02 00:00:00 -0700
-tags: c, lua
+tags: c lua
 ---
 
 I've written C extensions for Python, but I've never done it for Lua before.

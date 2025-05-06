@@ -2,7 +2,7 @@
 layout: post
 title: "Calling Lua from C"
 date: 2025-05-05 00:00:00 -0700
-tags: lua, c
+tags: lua c
 ---
 
 In a previous post I covered calling C from Lua. Here, I'll call Lua from C. In
