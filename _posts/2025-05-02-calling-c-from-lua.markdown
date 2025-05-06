@@ -2,7 +2,7 @@
 layout: post
 title: "Calling C From Lua"
 date: 2025-05-02 00:00:00 -0700
-tags: c lua
+tags: c lua fennel
 ---
 
 I've written C extensions for Python, but I've never done it for Lua before.
@@ -82,3 +82,25 @@ local mylib = require("myclib")
 local sum = mylib.add(3, 8)
 print("The sum is:", sum) -- 11
 ```
+
+## Bonus: Fennel
+
+Fennel is a LISP that compiles to Lua code, so it works almost exactly the same
+as the Lua code above.
+
+```fennel
+;; script.fnl
+
+;; Load the C module named "myclib"
+(local myclib (require "myclib"))
+
+;; Access the "add" function from the mylib module
+;; and call it with arguments 10 and 20
+(local sum ((. myclib :add) 3 8))
+
+;; Print the result
+(print "The sum from C is:" sum)
+```
+
+Here, `((. myclib :add) 3 8)` is like `myclib.add(3, 8)` in Lua, we're accessing
+the `add` method on the `myclib` table.
