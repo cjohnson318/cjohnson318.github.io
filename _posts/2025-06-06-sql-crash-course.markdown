@@ -173,6 +173,12 @@ If you need to update Alice's birthday, then use the `UPDATE` statement.
 UPDATE Students SET (first_name, last_name, date_of_birth) VALUES ('Alice', 'Able', '1984-01-01'); 
 {% endhighlight %}
 
+If you know the ID of a row, then you can delete it using a `WHERE` clause like this,
+
+{% highlight sql %}
+DELETE FROM Students WHERE student_id = '1';
+{% endhighlight %}
+
 ## Aggregate Functions and GROUP BY
 
 ### COUNT() SUM() AVG() MIN() MAX()
