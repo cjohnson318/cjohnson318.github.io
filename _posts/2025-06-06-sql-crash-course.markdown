@@ -110,6 +110,62 @@ sqlite database.db < schema.sql
 This will create the file `database.db` if it does not exist, otherwise it will
 add the above tables to `database.db` if they do not exist in that database.
 
+Next, we'll populate the database with some dummy data. Type `sqlite3
+database.db` to enter the database shell, then enter the following,
+
+{% highlight sql %}
+-- Students
+INSERT INTO Students (first_name, last_name, date_of_birth) VALUES ('Alice', 'Smith', '2008-05-15');
+INSERT INTO Students (first_name, last_name, date_of_birth) VALUES ('Bob', 'Johnson', '2007-11-20');
+INSERT INTO Students (first_name, last_name, date_of_birth) VALUES ('Charlie', 'Brown', '2009-02-01');
+INSERT INTO Students (first_name, last_name, date_of_birth) VALUES ('Diana', 'Prince', '2007-07-07');
+INSERT INTO Students (first_name, last_name, date_of_birth) VALUES ('Eve', 'Adams', '2008-09-09');
+
+-- Teachers
+INSERT INTO Teachers (first_name, last_name, email) VALUES ('Mr.', 'Johnson', 'johnson@school.edu');
+INSERT INTO Teachers (first_name, last_name, email) VALUES ('Ms.', 'Davis', 'davis@school.edu');
+INSERT INTO Teachers (first_name, last_name, email) VALUES ('Dr.', 'Miller', 'miller@school.edu');
+
+-- Courses
+INSERT INTO Courses (course_name, course_code, credits) VALUES ('Introduction to Algebra', 'MATH101', 3);
+INSERT INTO Courses (course_name, course_code, credits) VALUES ('Calculus I', 'MATH301', 4);
+INSERT INTO Courses (course_name, course_code, credits) VALUES ('History of Art', 'ART301', 3);
+INSERT INTO Courses (course_name, course_code, credits) VALUES ('English Literature', 'ENG201', 3);
+INSERT INTO Courses (course_name, course_code, credits) VALUES ('Biology I', 'BIO101', 4);
+
+-- Sections (assuming IDs based on insertion order)
+-- MATH101 (id 1) by Mr. Johnson (id 1)
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (1, 1, 'Fall 2024', 25); -- section_id: 1
+-- MATH301 (id 2) by Ms. Davis (id 2)
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (2, 2, 'Fall 2024', 20); -- section_id: 2
+-- ART301 (id 3) by Dr. Miller (id 3)
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (3, 3, 'Fall 2024', 30); -- section_id: 3
+-- ENG201 (id 4) by Ms. Davis (id 2)
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (4, 2, 'Fall 2024', 28); -- section_id: 4
+-- BIO101 (id 5) by Mr. Johnson (id 1)
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (5, 1, 'Fall 2024', 22); -- section_id: 5
+-- MATH101 (id 1) by Mr. Johnson (id 1) - another section
+INSERT INTO Sections (course_id, teacher_id, semester, capacity) VALUES (1, 1, 'Spring 2025', 27); -- section_id: 6
+
+-- Enrollments
+-- Alice (id 1)
+INSERT INTO Enrollments (student_id, section_id) VALUES (1, 1); -- Alice in MATH101 (Fall 2024)
+INSERT INTO Enrollments (student_id, section_id) VALUES (1, 3); -- Alice in ART301 (Fall 2024)
+-- Bob (id 2)
+INSERT INTO Enrollments (student_id, section_id) VALUES (2, 1); -- Bob in MATH101 (Fall 2024)
+INSERT INTO Enrollments (student_id, section_id) VALUES (2, 2); -- Bob in MATH301 (Fall 2024)
+-- Charlie (id 3)
+INSERT INTO Enrollments (student_id, section_id) VALUES (3, 4); -- Charlie in ENG201 (Fall 2024)
+-- Diana (id 4)
+INSERT INTO Enrollments (student_id, section_id) VALUES (4, 2); -- Diana in MATH301 (Fall 2024)
+INSERT INTO Enrollments (student_id, section_id) VALUES (4, 5); -- Diana in BIO101 (Fall 2024)
+-- Eve (id 5)
+INSERT INTO Enrollments (student_id, section_id) VALUES (5, 1); -- Eve in MATH101 (Fall 2024)
+INSERT INTO Enrollments (student_id, section_id) VALUES (5, 4); -- Eve in ENG201 (Fall 2024)
+{% endhighlight %}
+
+Then type `.quit` and hit return to exit the database.
+
 However, 9 times out of 10 you'll be *querying* databases, not building them,
 so let's talk about that.
 
@@ -179,9 +235,84 @@ If you know the ID of a row, then you can delete it using a `WHERE` clause like 
 DELETE FROM Students WHERE student_id = '1';
 {% endhighlight %}
 
+You can also do bulk deletes on larger sets of rows using the `WHERE` clause,
+
+{% highlight sql %}
+DELETE FROM Students
+WHERE enrollment_date > '2024-01-01';
+{% endhighlight %}
+
 ## Aggregate Functions and GROUP BY
 
-### COUNT() SUM() AVG() MIN() MAX()
+Aggregate functions and `GROUP BY` allow you to summarize repeated data within
+tables, and across tables.
+
+To get the total count of students you could do,
+
+{% highlight sql %}
+SELECT COUNT(*) AS total_students
+FROM Students;
+{% endhighlight %}
+
+To get the total number of courses taught by each teacher you could do,
+
+{% highlight sql %}
+SELECT
+    t.first_name,
+    t.last_name,
+    COUNT(s.section_id) AS number_of_sections_taught
+FROM
+    Teachers AS t
+JOIN
+    Sections AS s ON t.teacher_id = s.teacher_id
+GROUP BY
+    t.teacher_id, t.first_name, t.last_name; -- Group by teacher's ID and name
+{% endhighlight %}
+
+This would produce something like,
+
+{% highlight text %}
+first_name  last_name   number_of_sections_taught
+----------  ----------  -------------------------
+Dr.         Miller      1
+Mr.         Johnson     2
+Ms.         Davis       2
+{% endhighlight %}
+
+If you want to count the number of students per section,
+
+{% highlight sql %}
+SELECT
+    s.section_id,
+    c.course_name,
+    t.last_name AS teacher_last_name,
+    COUNT(e.student_id) AS num_students_enrolled
+FROM
+    Sections AS s
+JOIN
+    Courses AS c ON s.course_id = c.course_id
+JOIN
+    Teachers AS t ON s.teacher_id = t.teacher_id
+LEFT JOIN
+    Enrollments AS e ON s.section_id = e.section_id
+GROUP BY
+    s.section_id, c.course_name, t.last_name
+ORDER BY
+    num_students_enrolled DESC;
+{% endhighlight %}
+
+This would produce something like,
+
+{% highlight text %}
+section_id  course_name            teacher_last_name  num_students_enrolled
+----------  ---------------------  -----------------  ---------------------
+1           Introduction to Algebr Johnson              3
+2           Calculus I             Davis                2
+4           English Literature     Davis                2
+3           History of Art         Miller               1
+5           Biology I              Johnson              1
+6           Introduction to Algebr Johnson              0
+{% endhighlight %}
 
 ### HAVING
 
