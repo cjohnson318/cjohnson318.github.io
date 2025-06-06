@@ -78,3 +78,44 @@ CTRL-SPACE -
 
 And then you can navigate between panes by using `CTRL-SPACE <arrow>`.
 
+## Windows
+
+If panes are not enough in your session, and you need to add another window,
+then you can add one like this,
+
+{% highlight console %}
+CTRL-SPACE c
+{% endhighlight %}
+
+And you can rename the window with,
+
+{% highlight console %}
+CTRL-SPACE ,
+{% endhighlight %}
+
+You cycle to the previous and next windows with,
+
+{% highlight console %}
+CTRL-SPACE p
+CTRL-SPACE n
+{% endhighlight %}
+
+You can name a window, and list all windows, with,
+
+{% highlight console %}
+CTRL-SPACE ,
+CTRL-SPACE w
+{% endhighlight %}
+
+When you list all of the windows, you can open any one of them by using your
+arrow key and hitting return. You can also switch to a window directly by number,
+
+{% highlight console %}
+CTRL-SPACE b <number>
+{% endhighlight %}
+
+Finally, you can close the current window by using,
+
+{% highlight console %}
+CTRL-SPACE b &
+{% endhighlight %}
