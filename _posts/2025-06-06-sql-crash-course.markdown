@@ -2,7 +2,7 @@
 layout: post
 title: "SQL Crash Course"
 date: 2025-06-06 00:00:00 -0700
-tags: python
+tags: sql
 ---
 
 Having a basic understanding of SQL is incredibly useful. You can query your
@@ -16,6 +16,7 @@ dialects, like MySQL versus MS SQL Server, but it will give you a general
 understanding of what tools exist in most SQL dialects, and how to use them, so
 that you can ask an AI more specific questions for whatever SQL product that
 you're using.
+
 
 ## Basic Idea
 
@@ -33,6 +34,7 @@ Section. If we want to find out the name of the student or the section, then
 we would follow that ID, known as a Foreign Key, to the table it belongs to.
 (You can also `JOIN` tables together on their primary/foreign keys, but more on
 that later.)
+
 
 ## Schema
 
@@ -169,6 +171,7 @@ Then type `.quit` and hit return to exit the database.
 However, 9 times out of 10 you'll be *querying* databases, not building them,
 so let's talk about that.
 
+
 ## SELECT
 
 The first, simplest statement you should learn is the simple `SELECT` statement.
@@ -201,16 +204,87 @@ youngest first.
 
 That's kind of the 80/20 for the `SELECT` statement.
 
+
 ## JOIN
 
 After you get the hang of `SELECT`, you'll probably want to `JOIN` tables together
-and then query them.
+and then query them. This example will find out which students are in which
+courses, and who teaches those courses. This requires joining Students, Enrollments,
+Sections, Courses, and Teachers.
+
+{% highlight sql %}
+SELECT
+    S.first_name AS student_first_name,
+    S.last_name AS student_last_name,
+    C.course_name,
+    C.course_code,
+    T.first_name AS teacher_first_name,
+    T.last_name AS teacher_last_name,
+    Sec.semester
+FROM
+    Students AS S
+INNER JOIN
+    Enrollments AS E ON S.student_id = E.student_id
+INNER JOIN
+    Sections AS Sec ON E.section_id = Sec.section_id
+INNER JOIN
+    Courses AS C ON Sec.course_id = C.course_id
+INNER JOIN
+    Teachers AS T ON Sec.teacher_id = T.teacher_id
+ORDER BY
+    S.last_name, S.first_name, Sec.semester, C.course_name;
+{% endhighlight %}
+
+This should produce,
+
+{% highlight text %}
+student_first_name  student_last_name  course_name            course_code  teacher_first_name  teacher_last_name  semester
+------------------  -----------------  ---------------------  -----------  ------------------  -----------------  -----------
+Alice               Smith              History of Art         ART301       Dr.                 Miller             Fall 2024
+Alice               Smith              Introduction to Algebr MATH101      Mr.                 Johnson            Fall 2024
+Bob                 Johnson            Calculus I             MATH301      Ms.                 Davis              Fall 2024
+Bob                 Johnson            Introduction to Algebr MATH101      Mr.                 Johnson            Fall 2024
+Charlie             Brown              English Literature     ENG201       Ms.                 Davis              Fall 2024
+Diana               Prince             Biology I              BIO101       Mr.                 Johnson            Fall 2024
+Diana               Prince             Calculus I             MATH301      Ms.                 Davis              Fall 2024
+Eve                 Adams              English Literature     ENG201       Ms.                 Davis              Fall 2024
+Eve                 Adams              Introduction to Algebr MATH101      Mr.                 Johnson            Fall 2024
+{% endhighlight %}
+
 
 ## VIEWS
 
 After you get the hange of `JOIN`-ing tables, you'll probably want to save all of
 that work into a `VIEW` so that you can just say, `SELECT someView;` instead of,
 `SELECT ... FROM ... JOIN ... ON ...` every time.
+
+This example creates a view that combines information from our Students and
+Enrollments tables to show which students are enrolled in which sections, along
+with their enrollment date. This simplifies querying student enrollments 
+without needing to perform a JOIN every time. 
+
+{% highlight sql %}
+CREATE VIEW StudentEnrollmentsView AS
+SELECT
+    S.student_id,
+    S.first_name,
+    S.last_name,
+    E.section_id,
+    E.enrollment_date
+FROM
+    Students AS S
+INNER JOIN
+    Enrollments AS E ON S.student_id = E.student_id
+ORDER BY
+    S.last_name, S.first_name, E.enrollment_date;
+{% endhighlight %}
+
+Now we can query Alice's enrollments as,
+
+{% highlight sql %}
+SELECT * FROM StudentEnrollmentsView WHERE first_name = 'Alice';
+{% endhighlight %}
+
 
 ## INSERT, UPDATE and DELETE
 
@@ -241,6 +315,7 @@ You can also do bulk deletes on larger sets of rows using the `WHERE` clause,
 DELETE FROM Students
 WHERE enrollment_date > '2024-01-01';
 {% endhighlight %}
+
 
 ## Aggregate Functions and GROUP BY
 
