@@ -414,15 +414,123 @@ HAVING
 
 This should produce the following,
 
-{% highlight sql %}
+{% highlight text %}
 first_name  last_name   number_of_sections_taught
 ----------  ----------  -------------------------
 Mr.         Johnson     2
 Ms.         Davis       2
 {% endhighlight %}
 
+
 ## Subqueries
 
-## CREATE, ALTER, DELETE Table
+In this example we want a list of all students who are enrolled in any course
+section taught by 'Ms. Davis'. The outer query selects first and last names from
+students in the Students table, according to the inner subquery in the `WHERE`
+clause. The inner subquery looks at students enrolled in Ms. Davis's class.
+
+{% highlight sql %}
+SELECT
+    first_name,
+    last_name
+FROM
+    Students
+WHERE
+    student_id IN (
+        SELECT
+            e.student_id
+        FROM
+            Enrollments AS e
+        INNER JOIN
+            Sections AS sec ON e.section_id = sec.section_id
+        INNER JOIN
+            Teachers AS t ON Sec.teacher_id = t.teacher_id
+        WHERE
+            t.first_name = 'Ms.' AND t.last_name = 'Davis'
+    );
+{% endhighlight %}
+
+This should return,
+
+{% highlight text %}
+first_name  last_name
+----------  ----------
+Bob         Johnson
+Diana       Prince
+Charlie     Brown
+Eve         Adams
+{% endhighlight %}
+
+
+## CREATE, ALTER, DROP
+
+We saw above how to create the Students table,
+
+{% highlight sql %}
+CREATE TABLE IF NOT EXISTS Students (
+    student_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    date_of_birth TEXT, -- Stored as YYYY-MM-DD
+    enrollment_date TEXT DEFAULT CURRENT_DATE -- When the student enrolled
+);
+{% endhighlight %}
+
+We can add columns using the `ALTER` command. For example, we may want to add
+a GPA column to the Students table.
+
+{% highlight sql %}
+ALTER TABLE Students ADD COLUMN gpa REAL;
+{% endhighlight %}
+
+If we decide we don't like that column name, then we can rename it,
+
+{% highlight sql %}
+ALTER TABLE Students RENAME COLUMN gpa TO grade_point_average;
+{% endhighlight %}
+
+Then we can drop that column later,
+
+{% highlight sql %}
+ALTER TABLE Students DROP COLUMN grade_point_average;
+{% endhighlight %}
+
+We might rename the entire table,
+
+{% highlight sql %}
+ALTER TABLE Students RENAME TO HaplessDebtors;
+{% endhighlight %}
+
+We can destory the entire table by saying,
+
+{% highlight sql %}
+DROP TABLE HaplessDebtors;
+{% endhighlight %}
 
 ## TRIGGERS
+
+Triggers are used to apply changes automatically based on events in the database.
+In this example, we want to update a `last_modified_at` column on the Students
+table.
+
+First we need to add a `last_modified_at` column to the Student's table,
+
+
+{% highlight sql %}
+ALTER TABLE Students
+ADD COLUMN last_modified_at TEXT DEFAULT CURRENT_TIMESTAMP;
+{% endhighlight %}
+
+Now we can add the trigger. Any time we update the Students table, this trigger
+should fire, and then update that row's `last_modified_at` column.
+
+{% highlight sql %}
+CREATE TRIGGER update_student_timestamp
+AFTER UPDATE ON Students
+FOR EACH ROW
+BEGIN
+    UPDATE Students
+    SET last_modified_at = CURRENT_TIMESTAMP
+    WHERE student_id = OLD.student_id;
+END;
+{% endhighlight %}
