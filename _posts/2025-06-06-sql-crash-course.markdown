@@ -391,6 +391,36 @@ section_id  course_name            teacher_last_name  num_students_enrolled
 
 ### HAVING
 
+The `HAVING` clause acts like a `WHERE` clause for `GROUP BY` statements.
+
+In this example, we're gathering all of the teachers, grouping them by their
+name/id, and then filtering that result by the teachers that teach more than
+one class.
+
+{% highlight sql %}
+SELECT
+    t.first_name,
+    t.last_name,
+    COUNT(s.section_id) AS number_of_sections_taught
+FROM
+    Teachers AS t
+INNER JOIN
+    Sections AS s ON t.teacher_id = s.teacher_id
+GROUP BY
+    t.teacher_id, t.first_name, t.last_name
+HAVING
+    COUNT(s.section_id) > 1;
+{% endhighlight %}
+
+This should produce the following,
+
+{% highlight sql %}
+first_name  last_name   number_of_sections_taught
+----------  ----------  -------------------------
+Mr.         Johnson     2
+Ms.         Davis       2
+{% endhighlight %}
+
 ## Subqueries
 
 ## CREATE, ALTER, DELETE Table
