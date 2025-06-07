@@ -389,7 +389,7 @@ section_id  course_name            teacher_last_name  num_students_enrolled
 6           Introduction to Algebr Johnson              0
 {% endhighlight %}
 
-### HAVING
+## HAVING
 
 The `HAVING` clause acts like a `WHERE` clause for `GROUP BY` statements.
 
