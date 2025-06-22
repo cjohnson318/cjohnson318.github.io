@@ -56,6 +56,8 @@ Shade. I don't have a purple in this palette, because Quinacridone Rose makes
 such great purples with any warm blue. However, I have a Moonglow, which is an
 interesting violet neutral color that's fun to use as a wash on ink drawings.
 
+![Phthalo Green Mixes](/assets/images/chromatic-palette-green-mixes.jpg)
+
 ## Grug Palette
 
 If I only had two colors, they would be Indigo and Transparent Red Oxide, these
