@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tools: UV, Marimo, and Axolotl"
+title: "Tools: UV and Marimo"
 date: 2025-05-15 00:00:00 -0700
 tags: python
 ---
@@ -31,10 +31,7 @@ In this case, all of your top level modules are stored in a `pyproject.toml`.
 
 ## marimo
 
-You can use `uv` to install things globally using their "tool" subvommand:
+You can use `uv` to install things globally using their "tool" subcommand:
 `uv tool install tool-name`. I'll install `marimo` with it's recommended extras.
 `uv tool install "marimo[recommended]"`
-
-{% highlight python %}
-{% endhighlight %}
 
