@@ -17,6 +17,7 @@ a stick at, but it's dayenu feature is that you can create an environment and
 run a notebook from that environment. I never have figured out how to do that
 with jupyter--uv and marimo Just Work.
 
+
 ## uv
 
 Installation: `brew install uv`. That's it.
@@ -28,6 +29,11 @@ Run a project's entrypoint: `uv run main.py`.
 Add a module: `uv add pandas`, or remove: `uv remove module`.
 
 In this case, all of your top level modules are stored in a `pyproject.toml`.
+
+If you need a `requirements.txt` file, then use the command `uv pip compile
+pyproject.toml -o requirements.txt`. This will lock the dependencies specified
+in your `pyproject.toml` and write them to the `requirements.txt` file.
+
 
 ## marimo
 
