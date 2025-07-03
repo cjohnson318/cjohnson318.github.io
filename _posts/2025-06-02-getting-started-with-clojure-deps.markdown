@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting Started with Clojure Deps"
-date: 2025-06-02 00:00:00 -0700
+date: 2025-07-02 00:00:00 -0700
 tags: clojure
 ---
 
