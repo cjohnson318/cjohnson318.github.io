@@ -5,8 +5,9 @@ date: 2025-07-03 00:00:00 -0700
 tags: clojure
 ---
 
-I've been wanting to really get into using Clojure with the newer and preferred
-EDN tooling, over the older Leinengen tooling.
+After learning about setting up a Clojure project with `deps.edn`, I wanted to
+build a simple web server. I found a video, linked below, and worked out a
+simple example. Next, I'd like to build a ClojureScript frontend.
 
 
 ## Initial Setup ##
