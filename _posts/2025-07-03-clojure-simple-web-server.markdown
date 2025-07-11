@@ -52,23 +52,57 @@ cd src/clj/simple_web_server
 touch core.clj
 {% endhighlight %}
 
+Here, the context function allows us to next routes. In the second `json` route,
+we're using a keyword `:id` in the route, which is passed from the request, and
+into the function, as an argument.
+
 {% highlight clojure%}
 (ns simple-web-server.core
   (:require
-   [compojure.core :refer [defroutes GET]]
+   [compojure.core :refer [defroutes context GET POST]]
+   [compojure.route :as route]
    [cheshire.core :as json]
    [org.httpkit.server :refer [run-server]]))
 
 (defroutes app
   (GET "/html" [] "<h1>HELLO HTML ENDPOINT</h1>")
-  (GET "/json" [] {:status 200
-                   :headers {"Content-Type" "application/json"}
-                   :body (json/generate-string {:message "Hello JSON endpoint"})})
-  )
+  (context "/json" []
+    (GET "/" [] {:status 200
+                     :headers {"Content-Type" "application/json"}
+                     :body (json/generate-string {:message "Hello JSON endpoint"})}) 
+    (GET "/:id" [id] {:status 200
+                 :headers {"Content-Type" "application/json"}
+                 :body (json/encode {:message "Hello JSON endpoint" :id id})})
+    (POST "/" request
+      (let [body (json/parse-string (slurp (:body request)) true)]
+        {:status 200
+         :headers {"Content-Type" "application/json"}
+         :body (json/encode {:message "Received JSON data" :data body})})))
+    )
+
+  (route/not-found {:status 404
+                    :headers {"Content-Type" "application/json"}
+                    :body (json/encode {:error "Not Found"})}))
+
+(defn start-server []
+  (println "Starting server on port 4321...")
+  (run-server app {:port 4321}))
 
 (defn -main []
-  (run-server app {:port 4321})
-)
+  (start-server))
+
+(defonce server (atom nil))
+
+(defn start []
+  (reset!  server (start-server)))
+
+(defn stop []
+  (when @server
+    (@server :timeout 100)))
+
+(defn restart []
+  (stop)
+  (start))
 {% endhighlight %}
 
 Then run from the root `simple-web-server/` directory as,
@@ -77,6 +111,42 @@ Then run from the root `simple-web-server/` directory as,
 clj -M:run
 {% endhighlight %}
 
+
+## Testing the Endpoints ##
+
+And now we can test this by using httpie. Here is the `GET` request:
+
+{% highlight console %}
+$ http localhost:4321/json/1
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sun, 6 Jul 2025 02:22:37 GMT
+Server: http-kit
+content-length: 42
+
+{
+    "id": "1",
+    "message": "Hello JSON endpoint"
+}
+{% endhighlight %}
+
+Here is a `POST` request:
+
+{% highlight console %}
+$ http POST localhost:4321/json/ foo=bar   
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sun, 6 Jul 2025 02:34:32 GMT
+Server: http-kit
+content-length: 53
+
+{
+    "data": {
+        "foo": "bar"
+    },
+    "message": "Received JSON data"
+}
+{% endhighlight %}
 
 ## References ##
 
