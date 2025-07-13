@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flask+MongoDB Example with Dependency Injection"
+title: "Simple Flask Server with MongoDB"
 date: 2025-07-10 00:00:00 -0700
 tags: python mongo
 ---
@@ -347,7 +347,5 @@ Postgres, and still have a relatively simple way access those databases in the
 test environment. The trick of the whole thing is to not hard-code the app and
 the database together, but to return the database and the app from simple
 factory functions that use a single standardized configuration object, either a
-custom class, or a built-in data structure, like a dictionary. By using factories
-that inject depenedencies, rather than writing everything as a script, we can
-write code that is much easier to test.
+custom class, or a built-in data structure, like a dictionary.
 
