@@ -20,7 +20,9 @@ collection of strong, bright colors I've learned to use together.
   - Quinacridone Rose - Transparent warm magenta, great for mixing purples with
   warm blues, or caucasian flesh tones with Raw Sienna. Cool pink in a wash.
   Part of CMY triad.
-  - Quinacridone Coral - Transparent warm red. Warm pink in a wash.
+  - Quinacridone Coral - Transparent warm red. Warm pink in a wash. Quin. Rose
+  and Coral are very important for their "pink in wash" behavior, most reds cannot
+  do this.
   - Transparent Pyrole Orange - Transparent red orange, great for mixing
   neutrals with blues, or bright oranges with yellows.
   - Quinacridone Gold - Transparent warm gold, rich and deep in mass tone, 
@@ -38,14 +40,13 @@ collection of strong, bright colors I've learned to use together.
   of pigments found in Papermate felt tip pens.
 
 In here, there's the CMY palette of Phthalo Blue Green Shade, Quinacridone
-Rose, and Hansa Yellow Light. There's some less less transparent colors like
-Pyrole Scarlet and New Gamboge, and there's Quinacridone Gold, which isn't a
-chromatic color. It looks like Pyrole Scarlet and Transparent Pyrole Orange
-are a little too close together chromatically. I love the mixing possibilites
-offered by Transparent Pyrole Orange, and I love it's transparency. I don't
-mix with Pyrole Scarlet much at all, but it's a great primary red that I
-can't mix from anything else in the palette. Sometimes you just need a good
-STOP sign red.
+Rose, and Hansa Yellow Light. Quinacridone Gold, which isn't a chromatic color,
+but it's very bright in a wash, and it's a great mixer. It looks like
+Quinacridone Coral and Transparent Pyrole Orange are a little too close together
+chromatically, but they provide very different washes, and it's nearly
+impossible to mix a bright middle red from Quinacridone Rose and Transparent
+Pyrole Orange. You can mix a gred red that way, but it won't be as bright as
+using Quinacridone Coral.
 
 Why are there so many phthalos? I've avoided using Phthalo Blue Red Shade, in
 favor of Ultramarine for years, because of Phthalo's drying shift, but I'm over
