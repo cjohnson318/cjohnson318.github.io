@@ -18,16 +18,15 @@ collection of strong, bright colors I've learned to use together.
 ![Chromatic Palette](/assets/images/chromatic-palette.png)
 
   - Quinacridone Rose - Transparent warm magenta, great for mixing purples with
-  warm blues, or caucasian flesh tones with Raw Sienna. Light pink in a wash.
+  warm blues, or caucasian flesh tones with Raw Sienna. Cool pink in a wash.
   Part of CMY triad.
-  - Pyrole Scarlet - Semi-opaque STOP sign red.
-  - Transparent Pyrole Orange - Transparent orange red, great for mixing
+  - Quinacridone Coral - Transparent warm red. Warm pink in a wash.
+  - Transparent Pyrole Orange - Transparent red orange, great for mixing
   neutrals with blues, or bright oranges with yellows.
   - Quinacridone Gold - Transparent warm gold, rich and deep in mass tone, 
   bright in a wash. Great for mixing realistic neutralized greens.
-  - New Gamboge - Semi-opaque warm yellow, another great mixer for greens.
   - Hansa Yellow Light - Transparent slightly cool yellow. Not very strong on
-  its own. Mix with Hansa Yellow Light for a middle yellow. Part of CMY triad.
+  its own. Mix with Transparent Pyrole Orange for a middle yellow. Part of CMY triad.
   - Phthalo Green Blue Shade - Very strong, great mixer with yellow for clean
   greens, or Quinacridone Rose for blues, purples, and grays.
   - Phthalo Blue Green Shade - Very strong, mixes bright greens. Part of CMY
