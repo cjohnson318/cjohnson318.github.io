@@ -10,6 +10,7 @@ There are a couple of great tmux resources out there, like
 that are covered in AI generated ads for wrinkle cream. I think the best way to
 present this information is to start with the very minimum, and then build up.
 
+
 ## Custom Config
 
 This is my tmux config that I got from somewhere a couple of years ago. The
@@ -39,6 +40,7 @@ bind - split-window -v
 run '~/.tmux/plugins/tpm/tpm'
 {% endhighlight %}
 
+
 ## Sessions
 
 The main idea is that you have on-going sessions. Then each session can have
@@ -61,6 +63,16 @@ Then re-attach to a session like this,
 tmux a -t <session-name>
 {% endhighlight %}
 
+If you're in a session, and you want to switch to another session, then you can
+bring up a list of sessions with,
+
+{% highlight console %}
+CTRL-SPACE s
+{% endhighlight %}
+
+And then navigate via mouse, or hit a number, and RETURN to go to that session.
+
+
 ## Panes
 
 Panes are created in Windows. Using the config above, you can split a window
@@ -77,6 +89,7 @@ CTRL-SPACE -
 {% endhighlight %}
 
 And then you can navigate between panes by using `CTRL-SPACE <arrow>`.
+
 
 ## Windows
 
