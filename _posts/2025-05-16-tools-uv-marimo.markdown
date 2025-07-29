@@ -34,6 +34,13 @@ If you need a `requirements.txt` file, then use the command `uv pip compile
 pyproject.toml -o requirements.txt`. This will lock the dependencies specified
 in your `pyproject.toml` and write them to the `requirements.txt` file.
 
+If you need to pull from a specific branch from a GitHub, then you can do that
+like this,
+
+{% highlight console %}
+uv add git+https://github.com/<username>/<project> --branch main
+{% endhighlight %}
+
 
 ## marimo
 
