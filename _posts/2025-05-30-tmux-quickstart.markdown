@@ -44,8 +44,15 @@ run '~/.tmux/plugins/tpm/tpm'
 ## Sessions
 
 The main idea is that you have on-going sessions. Then each session can have
-one or more windows, and each window can have one or more panes. Create a named
-session like this,
+one or more windows, and each window can have one or more panes.
+
+See all sessions like this,
+
+{% highlight console %}
+tmux ls
+{% endhighlight %}
+
+Create a named session like this,
 
 {% highlight console %}
 tmux new -s <session-name>
@@ -89,6 +96,14 @@ CTRL-SPACE -
 {% endhighlight %}
 
 And then you can navigate between panes by using `CTRL-SPACE <arrow>`.
+
+Kill a pane using,
+
+{% highlight console %}
+CTRL-SPACE x
+{% endhighlight %}
+
+This will come up with a `y/n` prompt to confirm.
 
 
 ## Windows
