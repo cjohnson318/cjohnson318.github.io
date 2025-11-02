@@ -1,0 +1,48 @@
+---
+layout: post
+title: "HomeHub"
+date: 2025-0-0 00:00:00 -0700
+tags: python
+---
+
+These are my notes for getting [HomeHub](https://github.com/surajverma/homehub)
+set up on an Ubuntu server at home.
+
+First, `git clone https://github.com/surajverma/homehub.git` and create
+`config.yaml` from `config-example.yaml`.
+
+## Install docker compose
+
+Then, since you haven't installed docker compose yet, do all this.
+
+{% highlight console %}
+sudo apt install docker-compose-plugin
+{% endhighlight %}
+
+## Try installing docker compose again
+
+Okay, that didn't work, try this,
+
+{% highlight console %}
+sudo apt update
+sudo apt install ca-certificates curl gnupg lsb-release -y
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install docker-compose-plugin
+{% endhighlight %}
+
+## Host HomeHub
+
+Run the docker container,
+
+{% highlight console %}
+sudo docker compose up -d
+{% endhighlight %}
+
+From another terminal, run `ip a` to find the IP address of your linux machine
+on the network. Then on a browser, go to that IP address, to port 5000.
