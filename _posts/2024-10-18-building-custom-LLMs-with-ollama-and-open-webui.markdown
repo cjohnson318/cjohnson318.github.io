@@ -14,6 +14,7 @@ an off the shelf model with a purpose, and (2) retrieval augmented generation,
 or RAG, which means adding your own documents to an off the shelf model. 
 Ofcourse, you can and should combine these two techniques.
 
+
 ## Getting Started with Ollama
 
 Installing Ollama is incredibly easy, they've done a great job packaging their 
@@ -33,8 +34,15 @@ Once you have a model, then you can run it in your console and have a
 conversation with it. Again, replace `model-name` with the name of a model.
 
 {% highlight shell %}
-ollama run model-name
+ollama run model-name 
 {% endhighlight %}
+
+You can list your models with,
+
+{% highlight shell %}
+ollama ls
+{% endhighlight %}
+
 
 ## Doing Prompt Engineering with Ollama Models
 
@@ -69,6 +77,7 @@ ollama run mario
 Hello! It's your friend Mario.
 {% endhighlight %}
 
+
 ## Getting Started with Open WebUI
 
 If you have Ollama installed, then you can install Open WebUI fairly easily. I
@@ -91,6 +100,7 @@ open-webui serve
 Then you should see all of your models from Ollama listed in your workspace.
 
 ![Open WebUI Workspace](/assets/images/open-webui-workspace.png)
+
 
 ## Creating a RAG Model using Open WebUI
 
@@ -115,6 +125,7 @@ Then you will get a pop-up modal to describe your knowledge base...
 Then you can add documents with the plus button.
 
 ![Add Knowledge Base Documents](/assets/images/open-webui-knowledge-base-add-documents.png)
+
 
 ## Calling Models from Python Scripts
 
