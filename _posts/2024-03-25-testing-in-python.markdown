@@ -51,6 +51,7 @@ from ..lib import (
 )
 {% endhighlight %}
 
+
 ## Organizing Fixtures
 
 I keep all test fixtures in `test/conftest.py` which _magically_ does not need
@@ -79,6 +80,7 @@ def formation_adapter():
     os.remove(path)
 {% endhighlight %}
 
+
 ## Running Tests with Coverage
 
 I run scripts from the root of the project using [coverage](https://coverage.readthedocs.io/), [pytest](https://docs.pytest.org/), and [toml](https://docs.python.org/3/library/tomllib.html).
@@ -95,3 +97,14 @@ To run the tests I execute,
 coverage run -m pytest test -v
 coverate report -m
 {% endhighlight %}
+
+
+## Advanced Tools
+
+Test database logic with [testcontainers](https://testcontainers.com/?language=python).
+This is more than just mocking up a database, this creates a real database in a
+container and confirms that your inserts, selects, and joins are really doing
+the expected thing. This is great for testing common SQL and NoSQL databases.
+
+Test AWS resources with [localstack](https://pytest-localstack.readthedocs.io/en/latest/).
+This is another containerized solution for testing AWS cloud services like S3, etc.
