@@ -148,6 +148,7 @@ This design question tests your understanding of data structures optimized for p
 This design question tests your understanding of data partitioning, fault tolerance, and improving read performance.
 
 **Core Challenge:** Storing frequently accessed data across multiple servers for fast retrieval while ensuring high availability and efficient scaling.
+
 **Key Concepts:**
   * **Consistent Hashing:** Critical for distributing cache keys evenly across nodes and minimizing cache misses when a node is added or removed.
   * **Cache Eviction Policies:** Implementing algorithms like **LRU (Least Recently Used)** or LFU (Least Frequently Used) to manage cache size when memory is full.
@@ -159,6 +160,7 @@ This design question tests your understanding of data partitioning, fault tolera
 This is a highly advanced question that challenges your knowledge of achieving both high availability and strong consistency across multiple geographical regions.
 
 **Core Challenge:** Designing a system that is globally distributed yet provides strong transactional consistency (ACID properties).
+
 **Key Concepts:**
   * **Two-Phase Commit (2PC) / Distributed Transactions:** Mechanisms to ensure that a transaction is either committed or aborted across all participating nodes.
   * **Global Clock/TrueTime:** The need for a highly accurate, synchronized clock across all data centers to serialize transactions globally and guarantee external consistency.
@@ -170,6 +172,7 @@ This is a highly advanced question that challenges your knowledge of achieving b
 This tests your ability to handle massive asynchronous workloads, manage state, and deal with external systems (the internet).
 
 **Core Challenge:** Systematically fetching and indexing billions of web pages from the internet efficiently, politely, and at high throughput.
+
 **Key Concepts:**
   * **Frontier:** A service responsible for storing and prioritizing the URLs yet to be crawled, often implemented as a highly reliable **distributed queue**.
   * **Politeness:** Implementing logic to respect `robots.txt` rules and limit the crawl rate to avoid overwhelming target websites.
@@ -181,6 +184,7 @@ This tests your ability to handle massive asynchronous workloads, manage state, 
 This scenario focuses on extreme low-latency processing, auction mechanisms, and personalization at scale.
 
 **Core Challenge:** Selecting and serving a personalized ad to a user in under 100 milliseconds from the moment a web page loads.
+
 **Key Concepts:**
   * **Inverted Index:** Essential for quickly finding all relevant ads for a given keyword or user demographic.
   * **Auction Engine:** The core component that runs the bidding process among eligible ads to determine which ad wins and at what price.
@@ -192,6 +196,7 @@ This scenario focuses on extreme low-latency processing, auction mechanisms, and
 This problem is a deep dive into concurrency, strong consistency, and high-frequency, low-latency transaction processing.
 
 **Core Challenge:** Building an **Order Matching Engine** that handles extremely high volumes of buy and sell orders with precise sequencing and strong consistency guarantees.
+
 **Key Concepts:**
   * **Order Book Data Structure:** Using specialized structures (like a **Price-Time Priority Queue**) to efficiently match buy and sell orders.
   * **Concurrency Control:** Utilizing techniques like single-writer architecture (e.g., LMAX Disruptor pattern) or pessimistic locking to maintain strong transactional integrity on the central order book.
@@ -203,6 +208,7 @@ This problem is a deep dive into concurrency, strong consistency, and high-frequ
 This design tests your ability to handle real-time data streams, apply machine learning models, and execute high-speed decision-making.
 
 **Core Challenge:** Analyzing transactions in real time (low latency) to detect and flag suspicious activities before they are finalized.
+
 **Key Concepts:**
   * **Stream Processing:** Using technologies like **Apache Flink** or **Kafka Streams** to process transactional data continuously as it arrives.
   * **Rule Engine/ML Integration:** Architecture for loading and applying pre-trained machine learning models or heuristic rules to the data stream for scoring.
@@ -213,6 +219,7 @@ This design tests your ability to handle real-time data streams, apply machine l
 This focuses on managing massive fanout, state, and low-latency message delivery for transient data.
 
 **Core Challenge:** Broadcasting high-volume, real-time messages (comments, votes) to millions of concurrent viewers with minimal delay, and handling the temporary, high load.
+
 **Key Concepts:**
   * **WebSockets/Streaming:** Utilizing persistent connections (WebSockets or proprietary protocols) to push messages instantly to clients.
   * **Sharding by Event:** Segmenting the chat/comment stream based on the live event (e.g., "Game ID," "Stream ID") to distribute the load across many servers.
@@ -224,6 +231,7 @@ This focuses on managing massive fanout, state, and low-latency message delivery
 This problem focuses on system reliability, concurrency control, and the consistency trade-offs for numerical data.
 
 **Core Challenge:** Incrementing a massive number of counters (likes, views) concurrently and quickly, while maintaining high accuracy and availability.
+
 **Key Concepts:**
   * **Eventual Consistency:** Often preferred for performance; updates are initially batched and aggregated in a distributed cache (like Redis) before being written back to the persistent store.
   * **Atomic Operations:** Using native database or cache features (like Redis's `INCR` command) to ensure that concurrent increments don't overwrite each other.
@@ -235,6 +243,7 @@ This problem focuses on system reliability, concurrency control, and the consist
 This is a meta-system design that addresses how distributed applications manage their own state and configuration.
 
 **Core Challenge:** Storing critical, shared configuration data and service metadata that must be highly available and provide strong consistency for all reading clients.
+
 **Key Concepts:**
   * **Consensus Algorithms:** Using protocols like **Raft** or **Paxos** to ensure that all nodes in the cluster agree on the same value for the configuration state.
   * **Watchers/Notifications:** Implementing a mechanism that allows client services to be notified immediately when a configuration value changes, rather than constantly polling.
@@ -246,6 +255,7 @@ This is a meta-system design that addresses how distributed applications manage 
 Similar to the ride-sharing problem, this design explores advanced techniques for indexing and querying static geographical data.
 
 **Core Challenge:** Storing millions of static locations (restaurants, stores) and efficiently querying the database to return all points within a specific geographic area (e.g., bounding box or radius).
+
 **Key Concepts:**
   * **Geospatial Databases:** Leveraging databases with native geospatial indexing capabilities (e.g., **PostGIS**, MongoDB's GeoSpatial Index).
   * **Indexing Structures:** Using structures like **R-trees** or **Geohashing** for efficient spatial lookups, which transform 2D coordinates into a 1D, searchable string format.
@@ -257,6 +267,7 @@ Similar to the ride-sharing problem, this design explores advanced techniques fo
 This is a critical system for any tech company, testing your ability to handle massive time-series data ingest and querying.
 
 **Core Challenge:** Collecting metrics, logs, and traces from millions of application instances in real-time, storing them efficiently, and allowing for rapid, aggregated querying.
+
 **Key Concepts:**
   * **Time-Series Database (TSDB):** Choosing a specialized database (like Prometheus, InfluxDB, or a custom solution built on Cassandra) optimized for time-stamped data.
   * **Data Aggregation:** Implementing roll-up processes to downsample and summarize old data (e.g., aggregate 1-minute resolution data into 1-hour resolution after a week).
@@ -268,6 +279,7 @@ This is a critical system for any tech company, testing your ability to handle m
 This scenario focuses on authentication, authorization, and secure communication protocols.
 
 **Core Challenge:** Enabling a user to authenticate once and gain access to multiple independent software systems securely and seamlessly.
+
 **Key Concepts:**
   * **Protocols:** Understanding and applying standards like **OAuth 2.0** and **OpenID Connect (OIDC)** for authentication and authorization flows.
   * **Token Management:** Generating, validating, and revoking secure tokens (like **JWTs - JSON Web Tokens**) that carry user information across services.
@@ -279,6 +291,7 @@ This scenario focuses on authentication, authorization, and secure communication
 This question shifts focus from real-time services to large-scale, offline data movement and transformation.
 
 **Core Challenge:** Building a robust, fault-tolerant pipeline to move vast amounts of raw data from operational databases (OLTP) to an analytical data warehouse (OLAP) for business intelligence.
+
 **Key Concepts:**
   * **ETL/ELT:** Understanding the phases (Extract, Transform, Load or Extract, Load, Transform) and the tools used (e.g., **Apache Spark**, **Hadoop MapReduce**).
   * **Workflow Orchestration:** Using tools (like **Apache Airflow**) to manage dependencies between different data processing jobs and handle scheduling/retries.
@@ -290,6 +303,7 @@ This question shifts focus from real-time services to large-scale, offline data 
 This combines file storage, image manipulation, and global content delivery.
 
 **Core Challenge:** Handling high-volume image uploads, generating multiple resized and optimized formats, and serving them quickly worldwide.
+
 **Key Concepts:**
   * **Asynchronous Processing:** Using a **Message Queue** to decouple the image upload process from the heavy, time-consuming **Image Resizing/Processing Service**.
   * **Content Delivery Network (CDN):** Essential for caching various image formats and serving them with low latency.
@@ -301,6 +315,7 @@ This combines file storage, image manipulation, and global content delivery.
 This tests your understanding of edge-level traffic management, security, and service orchestration.
 
 **Core Challenge:** Creating a unified, centralized entry point for all client requests, which provides routing, security, monitoring, and request throttling before requests reach the backend microservices.
+
 **Key Concepts:**
   * **Reverse Proxy & Load Balancing:** The fundamental role of the gateway in distributing traffic across microservices.
   * **Authentication & Authorization:** Offloading security tasks (like token validation) from individual microservices to the gateway.
@@ -312,6 +327,7 @@ This tests your understanding of edge-level traffic management, security, and se
 This deep-dive question explores how traffic is managed at the network and application layers, testing reliability and routing algorithms.
 
 **Core Challenge:** Distributing incoming network traffic efficiently across a group of backend servers to maximize throughput and ensure high availability.
+
 **Key Concepts:**
   * **L4 vs. L7:** Understanding the difference between Layer 4 (Transport, uses IP/Port) and Layer 7 (Application, uses Headers/Cookies/URL Path) load balancing and their respective pros/cons.
   * **Health Checks:** Mechanisms to continuously monitor the health of backend servers and remove failing ones from the rotation instantly.
@@ -323,6 +339,7 @@ This deep-dive question explores how traffic is managed at the network and appli
 This addresses complex, multi-step workflows, integration with third-party services, and compliance requirements.
 
 **Core Challenge:** Creating a robust, auditable system to verify a user's identity (Know Your Customer/KYC) and screen against watchlists (Anti-Money Laundering/AML).
+
 **Key Concepts:**
   * **Workflow Engine:** Using a system (like a state machine or a dedicated workflow service) to manage the complex, multi-step process (e.g., capture ID $\rightarrow$ facial recognition $\rightarrow$ database lookup $\rightarrow$ manual review).
   * **Audit Logging:** Ensuring every step and decision is logged immutably for regulatory compliance.
@@ -334,6 +351,7 @@ This addresses complex, multi-step workflows, integration with third-party servi
 A challenging problem that integrates data science concepts with scalable, low-latency infrastructure.
 
 **Core Challenge:** Generating highly relevant and personalized suggestions for millions of users with low latency based on their history and similarities to others.
+
 **Key Concepts:**
   * **Candidate Generation:** The process of quickly selecting a small subset of items (candidates) that might be relevant to the user (e.g., using collaborative filtering or content-based methods).
   * **Scoring and Ranking:** Using machine learning models to assign a relevance score to each candidate and ordering them before presentation.
@@ -345,6 +363,7 @@ A challenging problem that integrates data science concepts with scalable, low-l
 This extends the standard search problem by introducing complex user history and context into the ranking algorithm.
 
 **Core Challenge:** Improving search result relevance by dynamically incorporating a user's past queries, clicked results, and profile information into the ranking score.
+
 **Key Concepts:**
   * **Inverted Index:** The core data structure for fast text search, mapping words to document IDs.
   * **Ranking Function:** Modifying the standard term frequency/inverse document frequency (TF-IDF) or BM25 score with **Personalization Features** (e.g., penalizing results the user has already seen or boosting results from preferred categories).
@@ -356,6 +375,7 @@ This extends the standard search problem by introducing complex user history and
 This is a foundational problem that tests your understanding of data integrity, block management, and fault tolerance at the storage layer.
 
 **Core Challenge:** Storing very large files reliably and efficiently across a cluster of commodity hardware servers.
+
 **Key Concepts:**
   * **Master/Slave Architecture:** The role of the **Namenode (Master)** for managing metadata and the **Datanodes (Slaves)** for storing the actual file blocks.
   * **Block Replication:** Breaking files into fixed-size blocks and replicating each block across multiple Datanodes to guarantee fault tolerance and availability.
