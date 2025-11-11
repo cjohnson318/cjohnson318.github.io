@@ -52,10 +52,18 @@ See all sessions like this,
 tmux ls
 {% endhighlight %}
 
-Create a named session like this,
+Create a new (named) session from the terminal, outside of tmux,
 
 {% highlight console %}
+tmux new
 tmux new -s <session-name>
+{% endhighlight %}
+
+From inside tmux, you can create a (named) session as,
+
+{% highlight console %}
+CTRL-SPACE : new
+CTRL-SPACE : new -s <session-name>
 {% endhighlight %}
 
 Detach from a session like this,
