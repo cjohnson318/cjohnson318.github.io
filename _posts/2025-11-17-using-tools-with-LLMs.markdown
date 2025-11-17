@@ -61,8 +61,7 @@ available_functions = {
 model_name = 'test_tooling'
 
 
-def main():
-    subject = input('\nWhat do you want this session to be about: ')
+def setup_model(subject:str) -> list[dict]:
     system = f'''You are an interviewer interviewing a candidate about the {subject}. Continually ask the candidate questions about {subject}, if they pass a question, update the report file with a pass, but if they fail a question, upate the report file with a fail. Whether a candidate passes or fails a question, follow up with another question.'''
     ollama.create(
         model=model_name,
@@ -70,36 +69,34 @@ def main():
         system=system,
     )
     messages = [{'role': 'user', 'content': 'I am the interview candidate and I am ready to begin.'}]
+    return messages
+
+def run_model(messages:list[dict]) -> tuple:
+    resp = ollama.chat(
+        model=model_name,
+        messages=messages,
+        tools=[
+            update_report_file_with_a_pass,
+            update_report_file_with_a_fail,
+        ],
+        think=True,
+    )
+    messages.append(resp.message)
+    print(f"\nThinking: {resp.message.thinking}")
+    print(f"\n{resp.message.content}")
+    return messages, resp
+
+def main():
+    subject = input('\nWhat do you want this session to be about: ')
+    messages = setup_model(subject)
     while True:
-        resp = ollama.chat(
-            model=model_name,
-            messages=messages,
-            tools=[
-                update_report_file_with_a_pass,
-                update_report_file_with_a_fail,
-            ],
-            think=True,
-        )
-        messages.append(resp.message)
-        print(f"\nThinking: {resp.message.thinking}")
-        print(f"\n{resp.message.content}")
+        messages, resp = run_model(messages)
         user_input = input('\n> ')
         messages.append({
             'role': 'user',
             'content': user_input,
         })
-        resp = ollama.chat(
-            model=model_name,
-            messages=messages,
-            tools=[
-                update_report_file_with_a_pass,
-                update_report_file_with_a_fail,
-            ],
-            think=True,
-        )
-        messages.append(resp.message)
-        print(f"\nThinking: {resp.message.thinking}")
-        print(f"\n{resp.message.content}")
+        messages, resp = run_model(messages)
         if resp.message.tool_calls:
             for tc in resp.message.tool_calls:
                 if tc.function.name in available_functions:
@@ -113,7 +110,6 @@ def main():
         if len(REPORT_FILE) == 3:
             break
     print(f'\n{REPORT_FILE=}')
-
 
 if __name__ == "__main__":
     main()
