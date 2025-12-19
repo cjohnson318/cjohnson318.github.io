@@ -2,6 +2,7 @@
 layout: post
 title:  "The Little Man Computer"
 date:   2024-08-28 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

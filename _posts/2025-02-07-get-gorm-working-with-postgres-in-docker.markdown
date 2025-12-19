@@ -2,6 +2,7 @@
 layout: post
 title: "Get GORM working with Postgres in Docker"
 date: 2025-02-07 00:00:00 -0700
+categories: tech
 tags: go
 ---
 

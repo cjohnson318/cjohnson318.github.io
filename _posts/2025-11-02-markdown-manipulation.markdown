@@ -2,6 +2,7 @@
 layout: post
 title: "Markdown Manipulation"
 date: 2025-11-02 00:00:00 -0700
+categories: tech
 tags: linux
 ---
 

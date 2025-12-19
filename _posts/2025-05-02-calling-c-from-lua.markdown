@@ -2,6 +2,7 @@
 layout: post
 title: "Calling C From Lua"
 date: 2025-05-02 00:00:00 -0700
+cateories: tech
 tags: c lua fennel
 ---
 

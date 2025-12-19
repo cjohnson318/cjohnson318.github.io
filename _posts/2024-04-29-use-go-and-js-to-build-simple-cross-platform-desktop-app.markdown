@@ -2,6 +2,7 @@
 layout: post
 title:  "Use Go and JS to Build a Simple Cross Platform Desktop App"
 date:   2024-04-29 00:00:00 -0700
+categories: tech
 tags: go javascript
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Tools: UV and Marimo"
 date: 2025-05-15 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

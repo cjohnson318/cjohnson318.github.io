@@ -2,6 +2,7 @@
 layout: post
 title: "Building Custom LLMs with Ollama and Open WebUI"
 date: 2024-10-18 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

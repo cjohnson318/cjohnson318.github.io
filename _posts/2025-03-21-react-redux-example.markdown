@@ -2,6 +2,7 @@
 layout: post
 title: "React Redux - Example"
 date: 2025-03-21 00:00:00 -0700
+categories: tech
 tags: react redux
 ---
 

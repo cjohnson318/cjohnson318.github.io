@@ -2,6 +2,7 @@
 layout: post
 title: "tmux Quickstart"
 date: 2025-05-30 00:00:00 -0700
+categories: tech
 tags: linux
 ---
 

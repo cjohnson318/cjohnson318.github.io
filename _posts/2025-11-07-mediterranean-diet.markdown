@@ -2,6 +2,7 @@
 layout: post
 title: "Mediterranean Diet"
 date: 2025-11-07 00:00:00 -0700
+categories: misc
 ---
 
 ## Week 1 

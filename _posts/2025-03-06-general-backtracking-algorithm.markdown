@@ -2,6 +2,7 @@
 layout: post
 title: "General Backtracking Algorithm"
 date: 2025-03-06 00:00:00 -0800
+categories: tech
 tags: python
 ---
 

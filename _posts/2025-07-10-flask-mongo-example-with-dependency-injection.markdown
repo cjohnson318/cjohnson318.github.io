@@ -2,6 +2,7 @@
 layout: post
 title: "Simple Flask Server with MongoDB"
 date: 2025-07-10 00:00:00 -0700
+categories: tech
 tags: python mongo
 ---
 

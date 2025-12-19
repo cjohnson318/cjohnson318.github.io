@@ -2,6 +2,7 @@
 layout: post
 title: "Using Valhalla for Routing in Mapbox"
 date: 2025-01-25 00:00:00 -0700
+categories: tech
 tags: javascript react
 ---
 
@@ -238,7 +239,7 @@ const Map: React.FC = () => {
           </div>
         }
       </div>
-      <div ref={mapContainer} className="map-container" style={{ height: '400px' }} />
+      <div ref={mapContainer} className="map-container" style=\{\{ height: "400px" \}\} />
     </div>
   );
 };

@@ -2,6 +2,7 @@
 layout: post
 title: "Modeling Agents in Python Using Mesa"
 date: 2024-10-30 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

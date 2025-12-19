@@ -2,6 +2,7 @@
 layout: post
 title: "Simple Textual App"
 date: 2025-11-12 00:00:00 -0700
+categories: tech
 tags: python textual
 ---
 

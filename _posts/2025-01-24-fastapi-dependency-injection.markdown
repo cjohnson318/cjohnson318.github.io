@@ -2,6 +2,7 @@
 layout: post
 title: "FastAPI Dependency Injection"
 date: 2025-01-24 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

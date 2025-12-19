@@ -2,6 +2,7 @@
 layout: post
 title: "Calling Lua from C"
 date: 2025-05-05 00:00:00 -0700
+categories: tech
 tags: lua c
 ---
 

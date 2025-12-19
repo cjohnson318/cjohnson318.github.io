@@ -2,6 +2,7 @@
 layout: post
 title: "Using Tools with LLMs"
 date: 2025-11-17 00:00:00 -0700
+categories: tech
 tags: python ollama
 ---
 

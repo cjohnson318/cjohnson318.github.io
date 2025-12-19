@@ -2,6 +2,7 @@
 layout: post
 title: 'Tagging in Git'
 date: 2024-03-25 00:00:00 -0700
+categories: tech
 tags: git
 ---
 

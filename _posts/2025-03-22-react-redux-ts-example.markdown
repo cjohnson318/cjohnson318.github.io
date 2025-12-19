@@ -2,6 +2,7 @@
 layout: post
 title: "React Redux in TypeScript - Example"
 date: 2025-03-22 00:00:00 -0700
+categories: tech
 tags: react redux
 ---
 

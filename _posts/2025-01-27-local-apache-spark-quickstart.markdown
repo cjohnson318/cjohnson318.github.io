@@ -2,6 +2,7 @@
 layout: post
 title: "Local Apache Spark Quickstart"
 date: 2025-01-27 00:00:00 -0700
+categories: tech
 tags: python spark
 ---
 

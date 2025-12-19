@@ -2,6 +2,7 @@
 layout: post
 title: "Geospatial Caching"
 date:  2025-01-02 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

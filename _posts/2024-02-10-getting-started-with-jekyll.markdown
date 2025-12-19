@@ -2,6 +2,7 @@
 layout: post
 title: 'Getting Started With Jekyll'
 date: 2024-02-10 19:00:00 -0700
+categories: tech
 tags: jekyll
 ---
 

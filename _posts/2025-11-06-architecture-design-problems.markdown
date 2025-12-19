@@ -2,6 +2,7 @@
 layout: post
 title: "Architecture Design Problems"
 date: 2025-11-06 00:00:00 -0700
+categories: tech
 tags: python
 ---
 
@@ -363,7 +364,6 @@ A challenging problem that integrates data science concepts with scalable, low-l
 This extends the standard search problem by introducing complex user history and context into the ranking algorithm.
 
 **Core Challenge:** Improving search result relevance by dynamically incorporating a user's past queries, clicked results, and profile information into the ranking score.
-
 **Key Concepts:**
   * **Inverted Index:** The core data structure for fast text search, mapping words to document IDs.
   * **Ranking Function:** Modifying the standard term frequency/inverse document frequency (TF-IDF) or BM25 score with **Personalization Features** (e.g., penalizing results the user has already seen or boosting results from preferred categories).
@@ -375,7 +375,6 @@ This extends the standard search problem by introducing complex user history and
 This is a foundational problem that tests your understanding of data integrity, block management, and fault tolerance at the storage layer.
 
 **Core Challenge:** Storing very large files reliably and efficiently across a cluster of commodity hardware servers.
-
 **Key Concepts:**
   * **Master/Slave Architecture:** The role of the **Namenode (Master)** for managing metadata and the **Datanodes (Slaves)** for storing the actual file blocks.
   * **Block Replication:** Breaking files into fixed-size blocks and replicating each block across multiple Datanodes to guarantee fault tolerance and availability.

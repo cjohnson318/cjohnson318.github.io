@@ -2,6 +2,7 @@
 layout: post
 title:  "Use Rust and JS to Build a Simple Cross Platform Desktop App"
 date:   2024-05-20 00:00:00 -0700
+categories: tech
 tags: rust
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: 'Design Patterns'
 date: 2024-03-09 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

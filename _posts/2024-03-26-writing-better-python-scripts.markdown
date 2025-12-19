@@ -2,6 +2,7 @@
 layout: post
 title: 'Writing Better Python Scripts'
 date: 2024-03-26 00:00:00 -0700
+categories: tech
 tags: python
 ---
 

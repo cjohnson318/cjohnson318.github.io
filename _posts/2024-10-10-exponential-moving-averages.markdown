@@ -2,6 +2,7 @@
 layout: post
 title: "Exponentially Weighted Moving Averages and MACD"
 date: 2024-10-10 00:00:00 -0700
+categories: tech
 tags: python
 mathjax: true
 ---

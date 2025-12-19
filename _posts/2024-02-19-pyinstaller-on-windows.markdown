@@ -2,6 +2,7 @@
 layout: post
 title:  "PyInstaller on Windows"
 date:   2024-02-19 19:00:00 -0700
+categories: tech
 tags: python
 ---
 

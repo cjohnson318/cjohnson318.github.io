@@ -2,6 +2,7 @@
 layout: post
 title:  "Use gRPC to Connect a Go/Gin Server to Python"
 date: 2024-11-03 00:00:00 -0700
+categories: tech
 tags: python go
 ---
 

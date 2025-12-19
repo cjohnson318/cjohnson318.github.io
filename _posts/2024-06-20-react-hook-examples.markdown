@@ -2,6 +2,7 @@
 layout: post
 title:  "React Hook Examples"
 date:   2024-06-20 00:00:00 -0700
+categories: tech
 tags: react
 ---
 

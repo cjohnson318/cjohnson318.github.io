@@ -2,6 +2,7 @@
 layout: post
 title: "Clojure Simple Web Server"
 date: 2025-07-03 00:00:00 -0700
+categories: tech
 tags: clojure
 ---
 

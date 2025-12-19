@@ -2,6 +2,7 @@
 layout: post
 title: 'Simple Deterministic Push Down Automata'
 date: 2024-02-09 19:00:00 -0700
+categories: tech
 tags: kotlin
 ---
 

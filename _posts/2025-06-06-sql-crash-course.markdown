@@ -2,6 +2,7 @@
 layout: post
 title: "SQL Crash Course"
 date: 2025-06-06 00:00:00 -0700
+categories: tech
 tags: sql
 ---
 

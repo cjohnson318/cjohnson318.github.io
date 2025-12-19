@@ -2,6 +2,7 @@
 layout: post
 title: "Briefhand"
 date: 2025-04-29 00:00:00 -0700
+categories: misc
 ---
 
 ## Introduction

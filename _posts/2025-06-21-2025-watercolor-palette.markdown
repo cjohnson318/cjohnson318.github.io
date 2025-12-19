@@ -2,7 +2,7 @@
 layout: post
 title: "2025 Watercolor Palette"
 date: 2025-06-21 00:00:00 -0700
-tags: watercolor 
+categories: misc
 ---
 
 I organize my palette into a chromatic area of strong, bright, mostly

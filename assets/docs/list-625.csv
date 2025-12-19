@@ -1,0 +1,625 @@
+animal, el animal
+dog, el perro
+cat, el gato
+fish, el pez
+bird, el párajo
+cow, la vaca
+pig, el cerdo
+mouse, el raton
+horse, el caballo
+wing, la ala
+transportation, la transportacion
+train, el tren
+plane, el avión
+car, el carro
+truck, el trocka
+bicycle, el bicla
+bus, el autobus
+boat, la barca
+ship, la barca
+tire, el neumático
+gasoline, la gasolina
+engine, el motor
+train ticket, el boleto
+location, el lugar
+city, la ciudad
+house, la casa
+apartment, el apartamento
+street/road, la calle
+airport, el aeropuerto
+train station, la estacion de tren
+bridge, el puente
+hotel, el hotel
+restaurant, el restaurante
+farm, la granja
+court, la corte
+school, la escuela
+office, la oficina
+room, la habitacion
+town, el pueblo
+university, la universidad
+club, el club
+bar, el bar
+park, el parque
+camp, el campamento
+store/shop, la tienda
+theater, el teatro
+library, la biblioteca
+hospital, el hospital
+church, la iglesia
+market, el mercado
+country, el país
+building, el edificio
+ground, el suelo
+outer space, el espacio exterior
+bank, el banco
+clothing, la ropa
+hat, la gorra
+dress, el vestido
+suit, el traje
+skirt, la falda
+shirt, la camisa
+t-shirt, la camiseta 
+pants, los pantalones
+shoes, los zapatos
+pocket, el bosillo
+coat, el abrigo
+stain, la mancha
+color, el color
+red, rojo
+orange, naranja
+yellow, amarillo
+green, verde
+blue (light/dark), azul
+brown, marrón
+pink, rosada
+black, negra
+white, blanca
+gray, gris
+people, la gente
+son, el hijo
+daughter, la hija 
+mother, la madre
+father, el padre
+parent los padres
+baby, el bebe
+man, el hombre
+woman, la mujer
+brother, el hermano
+sister, la harmana
+family, la familia
+grandfather, el abuelo
+grandmother, la abuela
+husband, el esposo
+wife, la esposa
+king, el rey
+queen, la reina
+president, el presidente
+neighbor, el vecino
+boy, el niño
+girl, la niña
+child, el niño
+adult, el adulto
+human, el humano
+friend, el amigo
+victim, la victima
+player, el jugador
+fan, el aficionado
+crowd, la multitud
+job, el trabajo
+teacher, el maestro
+student, el estudiante
+lawyer, el abogado
+doctor, el doctor
+patient, el paciente
+waiter, el camarero
+secretary, el secretario
+priest, el cura
+police, la policía
+army, el ejército
+soldier, el soldado
+artist, el artista
+author, al autor
+manager, el gerente
+reporter, el reportero
+actor, el actor
+society, la sociedad
+religion, la reigión
+heaven, el cielo
+hell, el infierno
+death, la muerte
+medicine, la medicina
+money, el dinero 
+dollar, el dólar
+bill, la cuenta
+marriage, el matrimonio
+wedding, la boda
+team, el equipo
+relationship, la relación
+race (ethnicity), la raza
+sex (the act), el sexo
+sex (gender), el sexo o el género
+murder, el homicidio
+prison, la prisión
+technology, le technología
+energy, la energía
+war, la guerra
+peace, la paz
+attack, el ataque
+election, la elección
+magazine, la revista
+newspaper, el periódico
+poison, el veneno
+gun, el arma de fuego
+sport, el deporte
+race (sport), la carrera
+exercise, el ejercicio
+ball, el balón o la pelota
+game, el juego
+price, la precio
+contract, el contrato
+drug, la droga
+sign, la señal
+science, la ciencia
+god, el dios
+art, le arte
+band, la banda
+song, la canción
+instrument (musical), el instrumento
+music, la musica
+movie, la pelicula
+beverages, los bebidas
+coffee, el cafe
+tea, el té
+wine, el vino
+beer, la cerveza
+juice, el jugo
+water, el agua
+milk, la leche
+food, la comida
+egg, el huevo
+cheese, el queso
+bread, el pan
+soup, la sopa
+cake, el pastel
+chicken, el pollo
+pork, el puerco
+beef, el res o el bistec
+apple, la manzana
+banana, la plátano
+orange, la naranja
+lemon, el limón
+corn, el maíz
+rice, el arroz
+oil, el aceite
+seed, la semilla
+knife, el cuchillo
+spoon, la cuchara
+fork, el tenedor
+plate, el plato
+cup, el vaso
+breakfast, el desayuno
+lunch, el almuerzo
+dinner, la cena
+sugar, el azucar
+salt, la sal
+bottle, la botella
+home, la casa
+table, la mesa
+chair, la silla
+bed, la cama
+dream, el sueño
+window, la ventana
+door, la puerta
+bedroom, la habitación
+kitchen, la cocina
+bathroom, el baño
+pencil, el lápiz
+pen, la pluma
+photograph, la foto(grafía)
+soap, el jabón
+book, el libro
+page, la pagina
+key, la llave
+paint, la pintura
+letter, la carta
+note, la nota
+wall, la pared
+paper, el papel
+floor, el piso
+ceiling, el techo
+roof, el techo
+pool, la piscina
+lock, la cerradura
+telephone, el teléfono
+garden, el jardín
+yard, el patio
+needle, la aguja
+bag, la bolsa
+box, la caja
+gift, el regalo
+card, la tarjeta
+ring, el anillo
+tool, la herramienta
+electronics, la electrónica
+clock, el reloj
+lamp, la lampara
+fan, el ventilador
+cell phone, el movil
+network, la red
+computer, la computadora
+program (computer), el programa
+laptop, el portátil
+screen, la pantalla
+camera, la cámara
+television, la televisión
+radio, la radio
+body, el cuerpo
+head, la cabeza
+neck, el cuello
+face, la cara
+beard, la barba
+hair, el pelo
+eye, el ojo
+mouth, la boca
+lip, el labio
+nose, el nariz
+tooth, el diente
+ear, la oreja
+tear drop, la lágrima
+tongue, la lengua
+back, la espalda
+toe, el dedo de pie
+finger, el dedo
+foot, el pie
+hand, la mano
+leg, la pierna
+arm, el brazo
+shoulder, el hombrow
+heart, el corazón
+blood, la sangre
+brain, el cerebro
+knee, la rodilla
+sweat, el sudor
+disease, la enfermadad
+bone, el hueso
+voice, la voz
+skin, la piel
+nature, la naturaleza
+sea, el mar
+ocean, el océano
+river, el rio
+mountain, la montaña
+rain, la lluvia
+snow, el nieve
+tree, el árbol
+sun, el sol
+moon, la luna
+world, el mundo
+Earth, la Tierra
+forest, el bosque
+sky, el cielo
+plant, la planta
+wind, el viento
+soil, el suelo
+flower, la flor
+valley, el valle
+root, la raíz
+lake, el lago
+star, la estrella
+grass, el césped
+leaf, la hoja
+air, el aire
+sand, la arena
+beach, la playa
+wave, la onda
+fire, el fuego
+ice, el hielo
+island, la isla
+hill, la colina
+heat, el calor
+material, el material
+glass, el vidrio
+metal, el metal
+plastic, el plástico
+wood, la madera
+stone, la piedra
+diamond, el diamante
+clay, la arcilla
+dust, el polvo
+gold, el orow
+copper, el cobre
+silver, la plata
+math, las matemáticas
+measurements, la medida
+meter, el metro
+centimeter, el centimetro
+kilogram, el kilogramo
+inch, la pulgada
+foot, el pie
+pound, la libra
+half, la mitad o el medio
+circle, el circulo
+square, el cuadrado
+temperature, la temperatura
+date, la fecha
+weight, el peso
+edge, el borde o la orilla 
+corner, la esquina o el rincón
+map, el mapa
+dot, el punto
+consonant, la consonante
+vowel, la vocal
+light, la luz
+sound, el sonido
+yes, sí
+no, no
+piece, la pieza o el pedazo
+pain, el dolor
+injury, la lesión
+hole, el agujero o el hueco
+image, a imagen
+pattern, el patrón
+noun, el sustantivo
+verb, el verbo
+adjective, el adjetivo
+directions, la dirección
+top, arriba o la parte superior
+bottom, abajo o la parte inferior
+side, el lado
+front, el frente 0 la parte delantera
+back, la parte de atrás o la parte trasera
+outside, afuera o fuera
+inside, adentro o dentro
+up, arriba
+down, abajo
+left, izquierda
+right, derecha
+straight, derecho o recto
+north, el norte
+south, el sur
+east, el este o el oriente
+west, el oeste o el occidente
+season, la estación
+fall, el otoño
+winter, el invierno
+spring, la primavera
+summer, el verano
+month, el mes
+January, enero
+February, febrero
+March, marzo
+April, abril
+May, mayo
+June, junio
+July, julio
+August, agosto
+September, spetiembre
+October, octubre
+November, noviembre
+December, diciembre
+Monday, lunes
+Tuesday, martes
+Wednesday, miércoles
+Thursday, jueves
+Friday, viernes
+Saturday, sábado
+Sunday, domingo
+time, el tiempo o la hora
+year, el año
+month, el mes
+week, la semana
+day, el día
+hour, la hora
+minute, el minuto
+second, el segundo
+morning, la mañana
+afternoon, la tarde
+evening, la tarde o la noche
+night, la noche
+work, trabajar
+play, jugar
+walk, caminar
+run, correr
+drive, manejar o conducir
+fly, volar
+swim, nadar
+go, ir
+stop, parar
+follow, seguir
+think, creer
+speak/say, decir
+eat, comer
+drink, beber
+kill, matar
+die, morir
+smile, sonreír
+laugh, reír
+cry, llorar
+buy, comprar
+pay, pagar
+sell, vender
+shoot (a gun), tirar
+learn, aprender
+jump, saltar
+smell, oler
+hear (a sound), oír
+listen (music), escuchar
+taste, saber
+touch, tocar
+see (a bird), ver
+watch (TV), mirar
+kiss, besar
+burn, quemar
+melt, derretirse
+dig, excavar
+explode, explotar
+sit, sentarse
+stand, levantarse o estar de pie
+love, amar
+pass by, pasar
+cut, cortar
+fight, luchar
+lie down, acostarse
+dance, bailar
+sleep, dormir
+wake up, despertarse
+sing, cantar
+count, contar
+marry, casarse
+pray, rezar
+win, ganar
+lose, perder
+mix/stir, mezclar
+bend, doblar
+wash, llavar
+cook, cocinar
+open, abrir
+close, cerrar
+write, escribir
+call, llamar
+turn, girar
+build, construir
+teach, enseñar
+grow, crecer
+draw, dibujar
+feed, alementar
+catch, atrapar
+throw, lanzar
+clean, limpiar
+find, encontrar
+fall, caerse
+push, empujar
+pull, jalar
+carry, llevar
+break, romper (pp roto)
+wear, usar
+hang, colgar
+shake, agitar o sacudir
+sign, firmar
+beat, batir
+lift, levantar
+long, largo
+short (vs long), corto
+tall, alto
+short (vs tall), bajo
+wide, ancho
+narrow, estrecho
+big/large, grande
+small/little, pequeño
+slow, lento
+fast, rapido
+hot, caliente
+cold, frío
+warm, calido
+cool, fresco
+new, nuevo
+old (new), viejo
+young, joven
+old (young), viejo
+good, bueno
+bad, malo
+wet, mojado
+dry, seco
+sick, enfermo
+healthy, bien
+loud, fuerte o ruidoso
+quiet, silencioso o tranquilo 
+happy, feliz
+sad, triste
+beautiful, hermoso o bello
+ugly, feo
+deaf, sordo
+blind, ciego
+nice, simpático o amable
+mean, antisimpático o malo
+rich, rico
+poor, pobre
+thick, grueso
+thin, delgado o fino
+expensive, caro
+cheap, barato
+flat, plano o liso
+curved, curvo
+male, macho o masculino
+female, hembra o feminina
+tight, apretado o estrcho
+loose, flojo o suelto
+high, alto
+low, bajo
+soft, blando o suave
+hard, duro
+deep, profundo o hondo
+shallow, poco profundo
+clean, limpio
+dirty, sucio
+strong, fuerte
+weak, débil
+dead, muerto
+alive, vivo
+heavy, pesado
+light (heavy), ligero
+dark, oscuro
+light (dark), claro
+nuclear,
+famous,
+i, yo
+you, tú
+he, él	
+she, ella
+it,
+we, nosotros
+y'all,
+they, ellos o ellas
+number, número
+1, uno
+2, dos
+3, tres
+4, cuatro
+5, cinco
+6, séis
+7, siete
+8, ocho
+9, nueve
+10, diez
+11, once
+12, doce
+13, trece
+14, catroce
+15, quince
+16, dieciséis
+17, diecisiete
+18, dieciocho
+19, diecinueve
+20, viente
+21, vienteuno
+22, vientedos
+30, treinta
+40, cuarenta
+50, cincuenta
+60, sesenta
+70, setenta
+80, ochenta
+90, noventa
+100, cien
+101, ciento uno
+110, ciento diez
+1000, mil
+1001, mil uno
+10000, diez mil
+100000, cien mil
+million, un millón
+billion, mil millónes
+trillion, un billón
+1st, primero
+2nd, segundo
+3rd, tercero
+4th, cuarto
+5th, quinto
+6th, sexto
+7th, séptimo
+8th, octavo
+9th, noveno
+10th, décimo
+last, último
+next to last, penúltimo
