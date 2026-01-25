@@ -3,6 +3,7 @@ layout: post
 title: "Using Coqui's Text To Speech"
 date: 2025-12-23 00:00:00 -0700
 tags: python
+categories: tech
 ---
 
 This project uses short .WAV files to convert text to a version of your own
