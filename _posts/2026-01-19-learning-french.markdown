@@ -48,6 +48,8 @@ this later.
 ## Module 2 - avoir, to have ##
 
 Avoir is used as an auxillary verb for the simple past tense, so learn it well.
+It is also used to express age, I have 42 years, and things like hubger and
+thirst, like in Spanish.
 
 | Subject-Verb  | Object      | Note    |
 |---------------|-------------|---------|
