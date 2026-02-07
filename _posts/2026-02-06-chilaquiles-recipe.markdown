@@ -7,6 +7,7 @@ categories: misc
 
 This makes about two cups.
 
+  - 2 C water
   - 2 dried guajillo chiles, seeded
   - 3 dried chiles de arbol, seeded to taste
   - half can of crushed tomato
