@@ -328,7 +328,31 @@ questions.
 
   1. Essential irregular verbs
   2. Conjugation, focusing on present, preterite, and shortcut future
-  3. Pronouns, object pronouns, refleive verbs
+  3. Pronouns, object pronouns, reflexive verbs
   4. Verb phrases and idioms
   5. Vocabulary and regular verbs
   6. Questions
+
+
+## Resources
+
+I liked Professor Pablo's videos because they're approachable and effective. I
+also like that he jumps right into all tenses of verbs in every video, which is
+exactly what you experience in books and real life.
+
+  - Youtube [Professor Pablo](https://www.youtube.com/@soyyoprofesorpablo)
+
+I like Chill Spanish Listening Practice by Anthony Morey because it's accessible
+for beginners, and it will really super charge your comprehension AS LONG AS YOU
+ARE NOT MULTITASKING. I really turned a corner by listening to this without
+multitasking, just sitting and listening.
+
+  - Spotify [Chill Spanish](https://open.spotify.com/show/6Gn7jHNS03HR40kP4BKZuV)
+
+This is my favorite Spanish book. It's illustrated by Andy Warhol (wtf, I know)
+and it's written by Ernest Hemingway's tutor, Margarita Madrigal, a queer woman
+who was a just a hugely innovative educator. I've seen a lot of textbooks, and
+phrase books, and she really set a standard for language education.
+
+  - Amazon [Madrigal's Magical Key To Spanish](https://a.co/d/06z3LePg)
+
