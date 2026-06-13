@@ -300,20 +300,22 @@ the apple".
 
 ### Time
 
-| English    | Formula                     | Example                             | Translation                |
-|------------|-----------------------------|-------------------------------------|----------------------------|
-| for period | llevo + time + gerund       | llevo dos horas estudiando          | I've been studying 2 hours |
-| for period | action + desde hace + time  | vivo aquí desde hace diez años      | I have lived here 10 years |
-| until time | action + hasta + deadline   | lo necesito hasta el lunes          | I need it until Monday     |
-| by time    | action + para + dealine     | lo necesito para el lunes           | I need it by Monday        |
-| duration   | action + time + a + time    | estoy libre de dos a tres           | I'm free from 2 to 3       |
-| duration   | desde + time + hasta + time | estoy libre desde enero hasta marzo | I'm free from Jan to Mar   |
+| English       | Formula                     | Example                             | Translation                |
+|---------------|-----------------------------|-------------------------------------|----------------------------|
+| for period    | llevo + time + gerund       | llevo dos horas estudiando          | I've been studying 2 hours |
+| for period    | action + desde hace + time  | vivo aquí desde hace diez años      | I have lived here 10 years |
+| until time    | action + hasta + deadline   | lo necesito hasta el lunes          | I need it until Monday     |
+| by time       | action + para + dealine     | lo necesito para el lunes           | I need it by Monday        |
+| at the latest | time + a más tardar         | lunes a más tardar                  | Monday at the latest       |
+| duration      | action + time + a + time    | estoy libre de dos a tres           | I'm free from 2 to 3       |
+| duration      | desde + time + hasta + time | estoy libre desde enero hasta marzo | I'm free from Jan to Mar   |
+| it's time to  | es hora de + inf            | es hora de irnos                    | it's time to go            |
 
 ### Advanced
 
 | English           | Formula                                                  | Example          | Translation        |
 |-------------------|----------------------------------------------------------|------------------|--------------------|
-| could have        | preterite of poder + haber + past perfect                | pude haber ido   | i could have gone    |
+| could have        | preterite of poder + haber + past perfect                | pude haber ido   | i could have gone  |
 | could have        | conditional poder + haber + past perfect                 | podría haber ido | i could have gone  |
 | would've fut.     | conditional haber + past perfect                         | habría ido       | i would have gone  |
 | should have       | conditional deber + haber + past perfect                 | debería hbr ido  | i should have gone |
