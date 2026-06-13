@@ -86,28 +86,28 @@ movies, and it's a good intro to the subjunctive. The present perfect and past
 perfect tenses are ways to say "I have done this", or "I had done that". Reading
 will go a lot faster when you don't get stuck on *había* every time it comes up.
 
-| Tense | Formula | Example | Translation |
-|-------|---------|---------|-------------|
-| present participle | -ando, -iendo | hablando | speaking |
-| past participle | -ado, -ido | hablado | spoken |
-| **present** | AR: -o, -as, -a, -amos, -an; ER/IR: -o, -es, -e, -(e/i)mos, -en | hablo | I speak |
-| **preterite** | AR: -é, -aste, -ó, -amos, -aron; ER/IR: -í, -iste, -ió, -imos, -ieron | hablé | I spoke |
-| **imperfect** | -aba, -ía | hablaba | I used to speak |
-| future | infintive + haber present tense endings: -é, -ás, -á, -emos, -án | hablaré | I will speak |
+| Tense               | Formula | Example | Translation |
+|---------------------|---------|---------|-------------|
+| present participle  | -ando, -iendo | hablando | speaking |
+| past participle     | -ado, -ido | hablado | spoken |
+| **present**         | AR: -o, -as, -a, -amos, -an; ER/IR: -o, -es, -e, -(e/i)mos, -en | hablo | I speak |
+| **preterite**       | AR: -é, -aste, -ó, -amos, -aron; ER/IR: -í, -iste, -ió, -imos, -ieron | hablé | I spoke |
+| **imperfect**       | -aba, -ía | hablaba | I used to speak |
+| future              | infintive + haber present tense endings: -é, -ás, -á, -emos, -án | hablaré | I will speak |
 | **shortcut future** | present of ir + a + infinitive | voy a hablar | I am going to speak |
-| conditional | infintive + -ía endings | hablaría | I would speak |
-| **command** | there's a lot going on here | habla, hable Ud. | speak! |
-| subjunctive | swap the endings | hable | I speak |
+| conditional         | infintive + -ía endings | hablaría | I would speak |
+| **command**         | there's a lot going on here | habla, hable Ud. | speak! |
+| subjunctive         | swap the endings | hable | I speak |
 | imperfect subjunctive | -ara, -iera | hablara | I used to speak |
 | **present perfect** | present of haber + past participle | he hablado | I have spoken |
-| **past perfect** | imperfect of haber + past participle | había hablado | I had spoken |
-| future perfect | future of haber + past participle | habré hablado  | I will have spoken |
+| **past perfect**    | imperfect of haber + past participle | había hablado | I had spoken |
+| future perfect      | future of haber + past participle | habré hablado  | I will have spoken |
 | conditional perfect | conditional of haber + past participle, then present subjunctive | habría hablado... | I would have spoken |
 | present progressive | present of estar + present participle | estoy hanblando | I am speaking |
-| past progressive | imperfect of estar + present participle | estaba hablando | I was speaking |
-| past perfect progressive | imperfect of haber + estado + past participle | había estado hablado | I had been speaking |
+| past progressive    | imperfect of estar + present participle | estaba hablando | I was speaking |
+| past perfect progressive    | imperfect of haber + estado + past participle | había estado hablado | I had been speaking |
 | subjunctive present perfect | present subjunctive of haber + past participle | haya hablado | I had spoken |
-| subjunctive past perfect | imperfect subjunctive of haber + past participle | hubiera hablado  | I would have spoken |
+| subjunctive past perfect    | imperfect subjunctive of haber + past participle | hubiera hablado  | I would have spoken |
 | shortcut subjunctive past perfect | imperfect of ir + a + infinitive | iba a hablar | I was going to speak |
 
 Just learning the six highlighted tenses for the first dozen verbs above is a
