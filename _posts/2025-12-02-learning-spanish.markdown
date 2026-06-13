@@ -184,14 +184,14 @@ kind of like saying "myself" or "yourself" after a verb. The best way to get a
 handle on these verbs is using a few of them regularly until your brain gets
 used to the idea.
 
-| Verb | Example | Translation |
-|-|-|-|
-| ducharse | me duché | I showered |
-| cepillarse | me cepillé los dientes | I brushed my teeth |
-| acostarse | me acosté | I went to bed |
-| dormirse | me dormí | I went to sleep |
-| despertarse | me desperté | I woke up |
-| levantarse | me levanté | I got out of bed |
+| Verb        | Example                | Translation        |
+|-------------|------------------------|--------------------|
+| ducharse    | me duché               | I showered         |
+| cepillarse  | me cepillé los dientes | I brushed my teeth |
+| acostarse   | me acosté              | I went to bed      |
+| dormirse    | me dormí               | I went to sleep    |
+| despertarse | me desperté            | I woke up          |
+| levantarse  | me levanté             | I got out of bed   |
 
 You shower (yourself), you brush (your own) teeth, you sleep (yourself), you can
 see how the "myself" trick falls apart very quickly after "shower yourself". You
@@ -201,17 +201,19 @@ form of a verb may have a different meanind that it's non-reflexive cousin.
 
 Here are some level two reflexive verbs.
 
-| Verb | Example | Translation |
-|-|-|-|
-| darse cuenta | me de cuenta de que llegué tarde | I realized that I was late |
-| ponerse | me puse enojado | I got mad |
-| ponerse | me puso los calectines | I put on socks |
-| volverse | se volvió loco | He went crazy |
-| irse | me voy ahorito | I'm going/leaving now, I'm headed out now |
-| olvidarse | se me olvidó | It/they forget themselves to me, I forgot |
-| caerse | se me cayó el vaso | I (accidentally) dropped the glass. Lit. The glass fell from me | 
-| romperse | se romió el vaso | The glass broke |
-| acabarse | se acabó el café | The coffee ran out |
+| Verb                | Example                          | Translation                |
+|---------------------|----------------------------------|----------------------------|
+| darse cuenta de que | me de cuenta de que llegué tarde | I realized that I was late |
+| darse               | me da enojado                    | It makes me mad            |
+| ponerse             | me puse enojado                  | I got mad                  |
+| ponerse             | me puse los calectines           | I put on socks             |
+| volverse            | se volvió loco                   | He went crazy              |
+| irse                | me voy ahorito                   | I'm headed out now         |
+| olvidarse           | se me olvidó                     | I forgot it                |
+| caerse              | se me cayó                       | I dropped i                |
+| romperse            | se me rompió                     | I broke it                 |
+| acabarse            | se me acabó el tiempo            | I ran out of time          |
+| perderse            | sem me perdió                    | I lost it                  |
 
 
 ### The Impersonal and the Passive Voice
@@ -243,45 +245,81 @@ I compiled my own list of useful constructions outside of tenses. These help
 get you from sentences like, "the apple is red," to, "I just finished cutting
 the apple".
 
-| English | Formula | Example | Translation |
-|---------|---------|---------|-------------|
-| can | present of poder | puedo ir | i can go |
-| may (present) | a lo mejor + present | a lo mejor voy | maybe i will go |
-| may (subjunctive) | quizá(s), tal vez + subjunctive | quizá vaya | i may go |
-| could | conditional of poder | podría ir | i could go |
-| should | conditional of deber | debería ir | i should go |
-| must | present of deber | debo ir | i must go |
-| shall | future of deber | deberé ir | i shall go |
-| usually | present of soler | suelo ir | i usually go |
-| used to usually | imperfect of soler | solía ir | i used to usually go |
-| become/get | ponerse + adj | me puse cansado | i got tired |
-| I'm supposed to... | se supone que + conjugated verb | se supone que voy | i'm supposed to go |
-| managed to, ended up | llegar a + infinitive | llegué a ir | i managed to go |
-| started to | ponerse a + infinitive | se puse a ir | i started to go |
-| about to | estar a punto de + infinitive | estoy a punto de ir | i'm abt to go |
-| "for" | estar por + infinitive | estory por ir | i'm "for" going |
-| feel like | tener ganas de | tengo ganas de ir | i feel like going |
-| want to | querer | quiero ir | i want to go |
-| have to | tener que | tengo que ir | i have to go |
-| it's necessary | hace falta + infinitive/noun | hace falta ir | it's necessary to go, going *is needed* |
-| someone needs | indirect object pronoun + hace falta + infinitive/noun | me hace falta ir | i need to go |
-| need to | necesitar + infinitive | necesito ir | i need to go |
-| i just finished | acabar de | yo acabo de irme | i just left |
-| upon/when | al + inf | al irse | upon leaving... |
-| still/continuing | seguir... | sigo yendo | i keep going, i'm still going |
-| do again | volver a | ups, volví a hacerlo | oops, I did it again |
+### Capability and Could/Would/Should
 
-Here are some more advanced constructions.
+| English           | Formula                         | Example        | Translation     |
+|-------------------|---------------------------------|----------------|-----------------|
+| can               | present of poder                | puedo ir       | i can go        |
+| try to            | tratar de + infinitive          | trato de ir    | i try to go     |
+| may (present)     | a lo mejor + present            | a lo mejor voy | maybe i will go |
+| may (subjunctive) | quizá(s), tal vez + subjunctive | quizá vaya     | i may go        |
+| could             | conditional of poder            | podría ir      | i could go      |
+| would             | conditional of ir               | iría           | i would go      |
+| should            | conditional of deber            | debería ir     | i should go     |
+| must              | present of deber                | debo ir        | i must go       |
+| shall             | future of deber                 | deberé ir      | i shall go      |
+| seem like         | paracer + adj/noun              | parece listo   | it looks ready  |
 
-| English | Formula | Example | Translation |
-|---------|---------|---------|-------------|
-| may have | preterite of poder + haber + past perfect | pude haber ido | i may have gone |
-| could have | conditional poder + haber + past perfect | podría haber ido | i could have gone |
-| would've fut. | conditional haber + past perfect | habría ido | i would have gone |
-| should have | conditional deber + haber + past perfect | debería hbr ido | i should have gone |
-| should have (alt) | imperfect subjunctive of haber + past participle | hubiera ido | i should have gone |
-| if i had | si + imperfect subjunctive of haber + past participle | si hubiera ido | if i had gone |
-| must have | present of deber + infinitive of haber + past participle | debo haber ido | i must have gone |
+### Necessity
+
+| English        | Formula                                                | Example           | Translation          |
+|----------------|--------------------------------------------------------|-------------------|----------------------|
+| want to        | querer                                                 | quiero ir         | i want to go         |
+| have to        | tener que                                              | tengo que ir      | i have to go         |
+| need to        | necesitar + infinitive                                 | necesito ir       | i need to go         |
+| supposed to    | se supone que + conjugated verb                        | se supone que voy | i'm supposed to go   |
+| one must       | hay que + infinitive                                   | hay que ir        | one must go          |
+| it's necessary | hace falta + infinitive/noun                           | hace falta ir     | it's necessary to go |
+| someone needs  | indirect object pronoun + hace falta + infinitive/noun | me hace falta ir  | i need to go         |
+| worth it       | valer la pena + infinitive                             | vale la pena ir   | it's worth it to go  |
+| feel like      | tener ganas de                                         | tengo ganas de ir | i feel like going    |
+| "for"          | estar por + infinitive                                 | estoy por ir      | i'm "for" going      | 
+| in order to    | para + infinitive                                      | para ir           | in order to go       |
+
+### Sequence
+
+| English              | Formula                         | Example              | Translation                   |
+|----------------------|---------------------------------|----------------------|-------------------------------|
+| usually              | present of soler                | suelo ir             | i usually go                  |
+| used to usually      | imperfect of soler              | solía ir             | i used to usually go          |
+| become/get           | ponerse + adj                   | me puse triste       | i got sad                     |
+| manage to, end up    | llegar a + infinitive           | llegué a ir          | i ended up going              |
+| manage to, got to    | conseguir + infinitive          | conseguí ir          | i got to go                   |
+| jumped into          | ponerse a + infinitive          | me puse a trabajar   | i dove into work              |
+| started to           | empezar a + infinitive          | empecé a irme        | i started to leave            |
+| about to             | estar a punto de + infinitive   | estoy a punto de ir  | i'm abt to go                 |
+| i just finished      | acabar de                       | yo acabo de irme     | i just left                   |
+| upon/when            | al + inf                        | al irse              | upon leaving...               |
+| still/continuing     | seguir + gerund                 | sigo yendo           | i keep going, i'm still going |
+| still haven't        | seguir sin + infinitive         | sigo sin ir          | i still haven't gone          |
+| do again             | volver a + infinitive           | volví a ir           | i went back again             |
+| before               | antes de + infinitive           | antes de ir          | before going                  | 
+| after                | despues de + infinitive         | depsues de ir        | after going                   |
+| do gradually         | ir + gerund                     | voy aprendiendo      | i'm slowly learning           |
+
+
+### Time
+
+| English    | Formula                     | Example                             | Translation                |
+|------------|-----------------------------|-------------------------------------|----------------------------|
+| for period | llevo + time + gerund       | llevo dos horas estudiando          | I've been studying 2 hours |
+| for period | action + desde hace + time  | vivo aquí desde hace diez años      | I have lived here 10 years |
+| until time | action + hasta + deadline   | lo necesito hasta el lunes          | I need it until Monday     |
+| by time    | action + para + dealine     | lo necesito para el lunes           | I need it by Monday        |
+| duration   | action + time + a + time    | estoy libre de dos a tres           | I'm free from 2 to 3       |
+| duration   | desde + time + hasta + time | estoy libre desde enero hasta marzo | I'm free from Jan to Mar   |
+
+### Advanced
+
+| English           | Formula                                                  | Example          | Translation        |
+|-------------------|----------------------------------------------------------|------------------|--------------------|
+| could have        | preterite of poder + haber + past perfect                | pude haber ido   | i could have gone    |
+| could have        | conditional poder + haber + past perfect                 | podría haber ido | i could have gone  |
+| would've fut.     | conditional haber + past perfect                         | habría ido       | i would have gone  |
+| should have       | conditional deber + haber + past perfect                 | debería hbr ido  | i should have gone |
+| should have (alt) | imperfect subjunctive of haber + past participle         | hubiera ido      | i should have gone |
+| if i had          | si + imperfect subjunctive of haber + past participle    | si hubiera ido   | if i had gone      |
+| must have         | present of deber + infinitive of haber + past participle | debo haber ido   | i must have gone   |
 
 
 ## Vocabulary
