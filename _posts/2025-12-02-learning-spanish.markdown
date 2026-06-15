@@ -247,18 +247,17 @@ the apple".
 
 ### Capability and Could/Would/Should
 
-| English           | Formula                         | Example        | Translation     |
-|-------------------|---------------------------------|----------------|-----------------|
-| can               | present of poder                | puedo ir       | i can go        |
-| try to            | tratar de + infinitive          | trato de ir    | i try to go     |
-| may (present)     | a lo mejor + present            | a lo mejor voy | maybe i will go |
-| may (subjunctive) | quizá(s), tal vez + subjunctive | quizá vaya     | i may go        |
-| could             | conditional of poder            | podría ir      | i could go      |
-| would             | conditional of ir               | iría           | i would go      |
-| should            | conditional of deber            | debería ir     | i should go     |
-| must              | present of deber                | debo ir        | i must go       |
-| shall             | future of deber                 | deberé ir      | i shall go      |
-| seem like         | paracer + adj/noun              | parece listo   | it looks ready  |
+| English           | Formula                         | Example        | Translation        |
+|-------------------|---------------------------------|----------------|--------------------|
+| can               | present of poder                | puedo ir       | i can go           |
+| try to            | tratar de + infinitive          | trato de ir    | i try to go        |
+| may (present)     | a lo mejor + present            | a lo mejor voy | maybe i will go    |
+| may (subjunctive) | quizá(s), tal vez + subjunctive | quizá vaya     | i may go           |
+| could             | conditional of poder            | podría ir      | i could go         |
+| would             | conditional of ir               | iría           | i would go         |
+| should            | conditional of deber            | debería ir     | i should go        |
+| must be           | present of deber de             | debe de irse   | he must be leaving |
+| seem like         | parecer + adj/noun              | parece listo   | it looks ready     |
 
 ### Necessity
 
@@ -284,6 +283,8 @@ the apple".
 | used to usually      | imperfect of soler              | solía ir             | i used to usually go          |
 | become/get           | ponerse + adj                   | me puse triste       | i got sad                     |
 | manage to, end up    | llegar a + infinitive           | llegué a ir          | i ended up going              |
+| end up               | terminar + gerund               | terminé yendo        | i ended up going              |
+| end up               | acabar + gerund                 | acabé yendo          | i ended up going              |
 | manage to, got to    | conseguir + infinitive          | conseguí ir          | i got to go                   |
 | jumped into          | ponerse a + infinitive          | me puse a trabajar   | i dove into work              |
 | started to           | empezar a + infinitive          | empecé a irme        | i started to leave            |

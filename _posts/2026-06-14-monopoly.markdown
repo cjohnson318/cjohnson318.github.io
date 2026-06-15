@@ -1,0 +1,124 @@
+---
+layout: post
+title: "Monopoly"
+date: 2026-06-14 00:00:00 -0700
+tags: python
+---
+
+I played Monopoly with my kids for the first time today. I bought a simplified
+version and we played two and a half rounds. Tonight I sat down at my computer
+and I programmed a little bit for fun, without any AI, for the first time
+since I really hopped on the AI bandwagon. It took me six months to really
+enjoy programming again. For a while I felt like any time spent coding and not
+focusing on some higher level thing like positioning or feature sets or
+marketing was a waste of time since AI agents had come so far. I also felt
+like I wasted years of my life focused on this thing that's suddenly no longer
+that special. I regretted not making more art in my twenties. I regretted not
+going to art school. I regretted prioritizing a "good job in a big company"
+over almost everything since I was around 20. Now, over 20 years later I think
+about what my goals and values are now, and how I want to spend the lesser 20
+years before my body and mind really go down the hill.
+
+I don't know. This was fun though. It's not going to make me a millionaire, no
+one else will ever run this code. It's not event that great, just a quick
+quick sketch over an hour or so after the kids have gone to bed, but it was fun
+to do, and to think about, and to just enjoy without it needing to be good, or
+correct, or valuable. I don't know what the future will bring, and I'm tired of
+trying to figure it out.
+
+{% highlight python %}
+import random
+
+class Square:
+    def __init__(self, name:str, rent:int=None, price:int=None):
+        self.name = name
+        self.rent = rent
+        self.price = price
+    def __repr__(self):
+        return f'{self.name}'
+
+class Board:
+    def __init__(self):
+        self.squares = []
+        self.registry = {}
+    def add_square(self, square:Square):
+        if square.rent:
+            self.registry[len(self.squares)] = {
+                'owner': None,
+            }
+        self.squares.append(square)
+
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.position:int = 0
+        self.balance:int = 500
+        self.properties:list[int] = []
+    def __repr__(self):
+        return f'{self.name}'
+
+class Game:
+    def __init__(self, board:Board):
+        self.board = board
+        self.players = []
+        self.current_player = 0
+        self.dice = 0
+    def turn(self):
+        self.current_player = (self.current_player + 1) % len(self.players)
+        player = self.players[self.current_player]
+        dice = random.randint(1, 3)
+        next_spot = player.position + dice
+        # pass GO
+        if next_spot >= len(self.board.squares):
+            player.balance += 200
+            print(f'{player} passed GO!')
+        player.position = next_spot % len(self.board.squares)
+        square = self.board.squares[player.position]
+        msg = f'{player} rolled {dice} now on {square} with balance: {player.balance}'
+        print(msg)
+        # pay rent
+        if square.rent:
+            owner = self.board.registry[player.position]['owner'] 
+            # if no owner, then buy
+            if owner is None:
+                if player.balance >= square.price:
+                    player.balance -= square.price
+                    self.board.registry[player.position]['owner'] = self.current_player
+                    print(f'{player} purchased {square} for {square.price}')
+            # if you're the owner, do nothing
+            elif owner == self.current_player:
+                pass
+            # if you're not the owner, then pay rent
+            else:
+                if player.balance >= square.rent:
+                    self.players[owner].balance += square.rent
+                    player.balance -= square.rent
+                    print(f'{player} paid {self.players[owner]} {square.rent}')
+                else:
+                    return player
+    def play(self):
+        while True:
+            loser = self.turn()
+            if loser:
+                break
+        print(f'{loser} lost')
+
+if __name__ == '__main__':
+    b = Board()
+    squares = [
+        ('Go',),
+        ('Frontage Rd', 50, 200),
+        ('Canal Street', 100, 250),
+        ('Jail',),
+        ('Main Street', 200, 500),
+        ('Park Ave', 400, 800),
+    ]
+    for args in squares:
+        b.add_square(Square(*args))
+    g = Game(b)
+    g.players.append(Player('Alice'))
+    g.players.append(Player('Bob'))
+    g.players.append(Player('Clarice'))
+    g.play()
+{% endhighlight %}
+
