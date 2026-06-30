@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Art Notes"
+date: 2026-06-20 00:00:00 -0700
+tags: python
+---
+
+## Ten Lines, Four Values
+
+Draw out an index card size rectangle. Do a sketch in 10 lines or less, and then ddescribe the scene in four values: white, black, and two midtones. Leave the white of the paper for white, then figure out your light midtone, then your dark midtone, and then finally add your black. Try to use the midtones to define one or two big shapes.
+

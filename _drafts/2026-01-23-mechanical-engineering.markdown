@@ -4,6 +4,7 @@ title: "Mechanical Engineering"
 date: 2026-01-23 00:00:00 -0700
 tags: mechanical-engineering
 categories: tech
+mathjax: true
 ---
 
 This post collects some topics that are prerequisites for a masters in
@@ -31,11 +32,29 @@ apply.
 These diagrams isolate a structure from the elements around it, and replace
 those elements with forces.
 
-(Statics - Free Body Diagram)[https://www.youtube.com/watch?v=qPaqDfRKBI4]
+[(YT) Statics - Free Body Diagram](https://www.youtube.com/watch?v=qPaqDfRKBI4)
+
+The main idea is that you break forces down into their components, according to
+your choice of coordinate system, and then solve for those forces so that the
+sum of the forces and the sum of the moments are equal to zero, at a chosen
+point.
+
+$ \sum F = 0, \sum M = 0 $
+
+[(YT) The Recipe for Solving Statics Problems](https://www.youtube.com/watch?v=xnFvcdCcVxk)
+
+  1. Draw a Working Diagram
+  2. Draw a Free Body Diagram, with a positive sign convention
+  3. Write equations for Static Equilibrium
+  4. Solve for something
 
 ### Method of Joints
 
+[(YT) Method of Joints](https://www.youtube.com/watch?v=_rK02neOF18)
+
 ### Method of Sections
+
+[(YT) Method of Sections](https://www.youtube.com/watch?v=JU6-eo4W3Qk)
 
 ### Centroids and Moments
 
